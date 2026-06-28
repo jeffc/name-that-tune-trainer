@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "lastUpdatedChartDate": "2026-06-27",
+    "filterCriteria": {
+      "peak_position_lte": 20,
+      "weeks_on_chart_gte": 16
+    },
+    "totalSongs": 5
+  },
+  "songs": [
+    {
+      "title": "Human Nature",
+      "artist": "Michael Jackson",
+      "decade": "1980s",
+      "genres": [
+        "Pop"
+      ],
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/f8/a1/5bf8a1ce-68a9-896b-b9de-abbba22bc65a/mzaf_2514540964270694755.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b5/58/d3/b558d32f-24fd-c889-d544-bc4c96f6113e/dj.oinzmlgt.jpg/100x100bb.jpg"
+    },
+    {
+      "title": "Don't We",
+      "artist": "Morgan Wallen",
+      "decade": "2020s",
+      "genres": [
+        "Country"
+      ],
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/10/6a/76106a13-68d2-2e7b-700d-8ab29a74fc78/mzaf_2926224850016162793.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/60/fe/fa60fe4a-4329-a0bb-eb7c-3b6094a4d831/25UMGIM46049.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "title": "What Did I Miss?",
+      "artist": "Drake",
+      "decade": "2020s",
+      "genres": [
+        "Dance"
+      ],
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/54/be/ba54beed-8d39-dc4a-50b6-729098afcac6/mzaf_12112943804346210488.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/7e/88/907e888c-5c23-de10-bf80-44c9eb626c7b/69050380-b612-46c0-8427-ad57af896e27.png/100x100bb.jpg"
+    },
+    {
+      "title": "Man I Need",
+      "artist": "Olivia Dean",
+      "decade": "2020s",
+      "genres": [
+        "Pop"
+      ],
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/bb/5b/42bb5b21-2550-6205-bf3c-334b0e7d6199/mzaf_17462928687872215879.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/e2/21/08e22164-7c0b-1522-818f-e0e74f62dc49/25UMGIM69703.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "title": "So Easy (To Fall In Love)",
+      "artist": "Olivia Dean",
+      "decade": "2020s",
+      "genres": [
+        "Pop"
+      ],
+      "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/0a/c0/b30ac06f-1b78-f579-8e72-e2fc9eb3a2c8/mzaf_7319723033619206839.plus.aac.p.m4a",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/e2/21/08e22164-7c0b-1522-818f-e0e74f62dc49/25UMGIM69703.rgb.jpg/100x100bb.jpg"
+    }
+  ]
+}
