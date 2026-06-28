@@ -30,20 +30,27 @@ graph TD
 
 ## 2. Playback Options: iTunes vs. Spotify
 
-A core technical challenge is playing copyrighted music without a dedicated backend server. We have evaluated two major approaches:
+A core technical challenge is playing copyrighted music without a dedicated backend server. The application implements a unified playback abstraction supporting both engines:
 
-| Feature              | iTunes Search API (Recommended)           | Spotify Web API & SDK                        |
-| :------------------- | :---------------------------------------- | :------------------------------------------- |
-| **Authentication**   | **None** (Public endpoints)               | Developer API Key, OAuth User Login          |
-| **Cost / Access**    | **Free** for all users                    | Requires **Spotify Premium** account         |
-| **Playback Content** | 30-second audio previews (AAC format)     | Full-length songs                            |
-| **Browser Support**  | Native `<audio>` element (extremely fast) | Spotify Web Playback SDK (needs integration) |
-| **Artwork/Metadata** | High-resolution cover art included        | High-resolution cover art included           |
-| **Setup Overhead**   | **Zero** setup                            | High overhead (requires redirects, tokens)   |
+| Feature              | iTunes Search API (Default Fallback)  | Spotify Web Playback SDK                          |
+| :------------------- | :------------------------------------ | :------------------------------------------------ |
+| **Authentication**   | **None** (Public endpoints)           | OAuth User Login (via User Client ID)             |
+| **Cost / Access**    | **Free** for all users                | Requires **Spotify Premium** account              |
+| **Playback Content** | 30-second audio previews (AAC format) | Full-length songs starting from 0:00              |
+| **Browser Support**  | Native HTML5 `<audio>` element        | Spotify Web Playback SDK (virtual Connect player) |
+| **Artwork/Metadata** | High-resolution cover art included    | High-resolution cover art included                |
+| **Setup Overhead**   | **Zero** setup                        | Pasting a free Developer Client ID                |
 
-### Recommendation: iTunes Search API
+### Unified Playback Flow
 
-For a trivia trainer, the **first 10–30 seconds** of a song are all that is needed. Using the iTunes Search API allows the application to remain a zero-dependency, serverless client-side app that anyone can open and use immediately. We can query the API dynamically during gameplay using the song's title and artist to obtain the preview URL and cover art.
+The Audio Playback engine abstracts the active driver at runtime:
+
+1. **iTunes Mode**: Initiates a native `<audio>` element loading the iTunes AAC 30s preview clip.
+2. **Spotify Mode**:
+   - **OAuth PKCE flow**: The app generates a cryptographically random code verifier and computes its SHA-256 code challenge. It redirects the user to `https://accounts.spotify.com/authorize` with `response_type=code` and the code challenge. On redirect back, the app exchanges the temporary auth code for an access token and refresh token directly with Spotify's token endpoint (`https://accounts.spotify.com/api/token`) without requiring a client secret. This supports the default authorization settings for all newly registered Spotify dashboard apps. Also supports auto-refreshing expired tokens in the background.
+   - **SDK Lifecycle**: Loads `https://sdk.scdn.co/spotify-player.js` dynamically, instantiates a virtual playback speaker device named _"Name That Tune Trainer"_, and connects to Spotify's server.
+   - **Search & Stream**: During gameplay, the app queries the Spotify Search API using the track title and artist to retrieve its native URI (e.g. `spotify:track:xxx`), then commands the Spotify device to stream that track starting from **0:00 (the very beginning)**.
+   - **iTunes Fallback**: If a song is not found in Spotify's catalog, or if the user's Spotify connection fails/expires, the system automatically falls back to playing the iTunes 30s preview for that round. This guarantees gameplay is never interrupted.
 
 ---
 

@@ -36,6 +36,34 @@ function getFirstLetter(text: string): string {
   return match ? match[0].toUpperCase() : "";
 }
 
+// PKCE Helpers for client-side Spotify Auth
+function generateRandomString(length: number): string {
+  const possible =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~";
+  const values = window.crypto.getRandomValues(new Uint8Array(length));
+  return Array.from(values)
+    .map((x) => possible[x % possible.length])
+    .join("");
+}
+
+async function sha256(plain: string): Promise<ArrayBuffer> {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(plain);
+  return window.crypto.subtle.digest("SHA-256", data);
+}
+
+function base64urlencode(buffer: ArrayBuffer): string {
+  return btoa(String.fromCharCode(...new Uint8Array(buffer)))
+    .replace(/=/g, "")
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_");
+}
+
+async function generateCodeChallenge(verifier: string): Promise<string> {
+  const hashed = await sha256(verifier);
+  return base64urlencode(hashed);
+}
+
 function App() {
   // Database state
   const [dynamicSongs, setDynamicSongs] = useState<Song[]>([]);
@@ -69,10 +97,34 @@ function App() {
     "artist",
   );
 
-  // Audio state
+  // Audio & Playback state
+  const [playbackEngine, setPlaybackEngine] = useState<"itunes" | "spotify">(
+    () =>
+      (localStorage.getItem("playback_engine") as "itunes" | "spotify") ||
+      "itunes",
+  );
   const [audioPlaying, setAudioPlaying] = useState<boolean>(false);
   const [audioProgress, setAudioProgress] = useState<number>(0);
   const [audioDuration, setAudioDuration] = useState<number>(0);
+
+  // Spotify Integration state
+  const [spotifyClientId, setSpotifyClientId] = useState<string>(
+    () => localStorage.getItem("spotify_client_id") || "",
+  );
+  const [spotifyToken, setSpotifyToken] = useState<string>("");
+  const [spotifyDeviceId, setSpotifyDeviceId] = useState<string>("");
+  const [isSpotifySdkReady, setIsSpotifySdkReady] = useState<boolean>(false);
+  const [spotifyPlayer, setSpotifyPlayer] = useState<any>(null);
+  const [spotifyUserInfo, setSpotifyUserInfo] = useState<any>(null);
+  const [spotifyStatus, setSpotifyStatus] = useState<
+    "disconnected" | "connecting" | "connected" | "error"
+  >("disconnected");
+  const [spotifyError, setSpotifyError] = useState<string>("");
+  const [spotifyPlaybackFallback, setSpotifyPlaybackFallback] =
+    useState<boolean>(false);
+  const [spotifyClipLimit, setSpotifyClipLimit] = useState<number>(() =>
+    parseInt(localStorage.getItem("spotify_clip_limit") || "30", 10),
+  );
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const questionStartTimeRef = useRef<number>(0);
@@ -89,7 +141,7 @@ function App() {
     new Set(allSongs.flatMap((s) => s.genres)),
   ).sort();
 
-  // 1. Initial configuration loads and dynamic songs sync
+  // 1. Initial configuration loads, OAuth parsing, and sync
   useEffect(() => {
     // Load local storage cached songs
     const cached = localStorage.getItem("cached_dynamic_songs");
@@ -98,6 +150,136 @@ function App() {
         setDynamicSongs(JSON.parse(cached));
       } catch (e) {
         console.error("Error loading cached dynamic songs:", e);
+      }
+    }
+
+    // Check for Spotify Auth Code in query parameters (PKCE flow redirect)
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get("code");
+    const storedClientId = localStorage.getItem("spotify_client_id") || "";
+
+    if (code && storedClientId) {
+      const verifier = localStorage.getItem("spotify_code_verifier") || "";
+      const redirectUri = window.location.origin + window.location.pathname;
+
+      const exchangeCodeForToken = async () => {
+        setSpotifyStatus("connecting");
+        try {
+          const res = await fetch("https://accounts.spotify.com/api/token", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: new URLSearchParams({
+              client_id: storedClientId,
+              grant_type: "authorization_code",
+              code: code,
+              redirect_uri: redirectUri,
+              code_verifier: verifier,
+            }),
+          });
+
+          if (!res.ok) {
+            const errData = await res.json();
+            throw new Error(
+              errData.error_description || "Token exchange failed",
+            );
+          }
+
+          const data = await res.json();
+          const expiresAt = Date.now() + data.expires_in * 1000;
+
+          localStorage.setItem("spotify_access_token", data.access_token);
+          localStorage.setItem(
+            "spotify_token_expires_at",
+            expiresAt.toString(),
+          );
+          if (data.refresh_token) {
+            localStorage.setItem("spotify_refresh_token", data.refresh_token);
+          }
+
+          setSpotifyToken(data.access_token);
+          setSpotifyStatus("connecting");
+          setPlaybackEngine("spotify");
+        } catch (err: any) {
+          console.error("Spotify token exchange error:", err);
+          setSpotifyStatus("error");
+          setSpotifyError(
+            err.message || "Failed to exchange authorization code",
+          );
+        }
+      };
+
+      exchangeCodeForToken();
+
+      // Clear search query parameters from URL
+      window.history.replaceState(null, "", window.location.pathname);
+    } else {
+      // Check stored token
+      const storedToken = localStorage.getItem("spotify_access_token");
+      const expiresAt = localStorage.getItem("spotify_token_expires_at");
+      const storedRefreshToken = localStorage.getItem("spotify_refresh_token");
+
+      if (storedToken && expiresAt) {
+        if (Date.now() < parseInt(expiresAt, 10)) {
+          setSpotifyToken(storedToken);
+          setSpotifyStatus("connecting");
+          setPlaybackEngine("spotify");
+        } else if (storedRefreshToken && storedClientId) {
+          // Token expired, attempt refresh
+          const refreshAccessToken = async () => {
+            setSpotifyStatus("connecting");
+            try {
+              const res = await fetch(
+                "https://accounts.spotify.com/api/token",
+                {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                  },
+                  body: new URLSearchParams({
+                    grant_type: "refresh_token",
+                    refresh_token: storedRefreshToken,
+                    client_id: storedClientId,
+                  }),
+                },
+              );
+
+              if (!res.ok) throw new Error("Failed to refresh access token");
+
+              const data = await res.json();
+              const newExpiresAt = Date.now() + data.expires_in * 1000;
+
+              localStorage.setItem("spotify_access_token", data.access_token);
+              localStorage.setItem(
+                "spotify_token_expires_at",
+                newExpiresAt.toString(),
+              );
+              if (data.refresh_token) {
+                localStorage.setItem(
+                  "spotify_refresh_token",
+                  data.refresh_token,
+                );
+              }
+
+              setSpotifyToken(data.access_token);
+              setSpotifyStatus("connecting");
+              setPlaybackEngine("spotify");
+            } catch (err) {
+              console.error("Spotify auto-refresh failed, cleaning up:", err);
+              localStorage.removeItem("spotify_access_token");
+              localStorage.removeItem("spotify_token_expires_at");
+              localStorage.removeItem("spotify_refresh_token");
+              setSpotifyStatus("disconnected");
+            }
+          };
+          refreshAccessToken();
+        } else {
+          // Token expired and no refresh token
+          localStorage.removeItem("spotify_access_token");
+          localStorage.removeItem("spotify_token_expires_at");
+          localStorage.removeItem("spotify_refresh_token");
+        }
       }
     }
 
@@ -115,6 +297,185 @@ function App() {
       }
     };
   }, []);
+
+  // Spotify Disconnect Helper
+  const handleSpotifyDisconnect = () => {
+    localStorage.removeItem("spotify_access_token");
+    localStorage.removeItem("spotify_token_expires_at");
+    setSpotifyToken("");
+    setSpotifyDeviceId("");
+    setSpotifyUserInfo(null);
+    setSpotifyStatus("disconnected");
+    setPlaybackEngine("itunes");
+    localStorage.setItem("playback_engine", "itunes");
+    if (spotifyPlayer) {
+      spotifyPlayer.disconnect();
+      setSpotifyPlayer(null);
+    }
+  };
+
+  // 1b. Fetch Spotify User Info when token is available
+  useEffect(() => {
+    if (!spotifyToken) return;
+
+    const fetchProfile = async () => {
+      try {
+        const res = await fetch("https://api.spotify.com/v1/me", {
+          headers: { Authorization: `Bearer ${spotifyToken}` },
+        });
+
+        if (res.status === 401) {
+          handleSpotifyDisconnect();
+          return;
+        }
+
+        if (!res.ok) throw new Error("Failed to fetch Spotify profile");
+
+        const data = await res.json();
+        setSpotifyUserInfo(data);
+        setSpotifyStatus("connected");
+      } catch (err: any) {
+        console.error("Error fetching Spotify profile:", err);
+        setSpotifyStatus("error");
+        setSpotifyError(err.message || "Failed to load Spotify profile");
+      }
+    };
+
+    fetchProfile();
+  }, [spotifyToken]);
+
+  // 1c. Load Spotify Web Playback SDK script dynamically
+  useEffect(() => {
+    if (
+      playbackEngine !== "spotify" ||
+      !spotifyToken ||
+      spotifyStatus === "error"
+    )
+      return;
+
+    (window as any).onSpotifyWebPlaybackSDKReady = () => {
+      setIsSpotifySdkReady(true);
+    };
+
+    if (!document.getElementById("spotify-player-sdk")) {
+      const script = document.createElement("script");
+      script.id = "spotify-player-sdk";
+      script.src = "https://sdk.scdn.co/spotify-player.js";
+      script.async = true;
+      document.body.appendChild(script);
+    } else if ((window as any).Spotify) {
+      setIsSpotifySdkReady(true);
+    }
+  }, [playbackEngine, spotifyToken, spotifyStatus]);
+
+  // 1d. Initialize Spotify Web Playback Player instance
+  useEffect(() => {
+    if (
+      !isSpotifySdkReady ||
+      !spotifyToken ||
+      spotifyPlayer ||
+      spotifyStatus === "error"
+    )
+      return;
+
+    const player = new (window as any).Spotify.Player({
+      name: "Name That Tune Trainer",
+      getOAuthToken: (cb: any) => cb(spotifyToken),
+      volume: 0.7,
+    });
+
+    // Error Listeners
+    player.addListener("initialization_error", ({ message }: any) => {
+      console.error("Spotify Init Error:", message);
+      setSpotifyStatus("error");
+      setSpotifyError(message);
+    });
+    player.addListener("authentication_error", ({ message }: any) => {
+      console.error("Spotify Auth Error:", message);
+      setSpotifyStatus("error");
+      setSpotifyError("Spotify session expired. Reconnect Spotify.");
+      handleSpotifyDisconnect();
+    });
+    player.addListener("account_error", ({ message }: any) => {
+      console.error("Spotify Account Error:", message);
+      setSpotifyStatus("error");
+      setSpotifyError("Spotify Premium required for Web SDK streaming.");
+    });
+    player.addListener("playback_error", ({ message }: any) => {
+      console.error("Spotify Playback Error:", message);
+    });
+
+    // Playback status listener
+    player.addListener("player_state_changed", (state: any) => {
+      if (!state) return;
+      setAudioPlaying(!state.paused);
+      setAudioProgress(state.position / 1000);
+      setAudioDuration(state.duration / 1000);
+    });
+
+    // Ready listener
+    player.addListener("ready", ({ device_id }: any) => {
+      console.log("Spotify Web Play Player Ready on Device ID:", device_id);
+      setSpotifyDeviceId(device_id);
+      setSpotifyStatus("connected");
+    });
+
+    // Not Ready listener
+    player.addListener("not_ready", ({ device_id }: any) => {
+      console.log("Spotify Device ID went offline:", device_id);
+      setSpotifyDeviceId("");
+    });
+
+    player.connect();
+    setSpotifyPlayer(player);
+
+    return () => {
+      if (player) {
+        player.disconnect();
+      }
+    };
+  }, [isSpotifySdkReady, spotifyToken]);
+
+  // 1e. Poll active playback state from Spotify SDK for smooth progress updates
+  useEffect(() => {
+    let interval: any = null;
+    if (playbackEngine === "spotify" && audioPlaying && spotifyPlayer) {
+      interval = setInterval(async () => {
+        try {
+          const state = await spotifyPlayer.getCurrentState();
+          if (state) {
+            const progressSec = state.position / 1000;
+            setAudioProgress(progressSec);
+            setAudioDuration(state.duration / 1000);
+
+            // Enforce custom clip limit if greater than 0 and guess is not yet locked
+            if (
+              spotifyClipLimit > 0 &&
+              progressSec >= spotifyClipLimit &&
+              !guessLocked &&
+              gameStage === "playing"
+            ) {
+              await spotifyPlayer.pause();
+              setAudioPlaying(false);
+              handleMakeGuess("TIMEOUT");
+            }
+          }
+        } catch (e) {
+          console.error("Error polling Spotify player state:", e);
+        }
+      }, 500);
+    }
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [
+    audioPlaying,
+    playbackEngine,
+    spotifyPlayer,
+    spotifyClipLimit,
+    guessLocked,
+    gameStage,
+  ]);
 
   // 2. Keyboard listener for physical key presses
   useEffect(() => {
@@ -313,16 +674,16 @@ function App() {
     setCurrentSongIndex(0);
     setGuesses([]);
     setGameStage("playing");
-
     // Start the first song
     prepareQuestion(selected[0]);
   };
 
-  const prepareQuestion = (song: Song) => {
+  const prepareQuestion = async (song: Song) => {
     setGuessLocked(false);
     setCurrentGuessLetter("");
     setAudioPlaying(false);
     setAudioProgress(0);
+    setSpotifyPlaybackFallback(false);
 
     // Clear any pending audio playback timeout
     if (playbackTimeoutRef.current) {
@@ -346,10 +707,81 @@ function App() {
     setCurrentGuessType(type);
     setCorrectLetter(firstLetter);
 
-    // Setup audio player
+    // Pause iTunes player if active
     if (audioRef.current) {
       audioRef.current.pause();
     }
+
+    // Pause Spotify player if initialized
+    if (spotifyPlayer && playbackEngine === "spotify") {
+      try {
+        await spotifyPlayer.pause();
+      } catch (e) {
+        console.error("Failed to pause Spotify player:", e);
+      }
+    }
+
+    // Setup Spotify Playback Engine if active
+    if (playbackEngine === "spotify" && spotifyToken && spotifyDeviceId) {
+      try {
+        const query = `track:${encodeURIComponent(song.title)} artist:${encodeURIComponent(song.artist)}`;
+        const searchRes = await fetch(
+          `https://api.spotify.com/v1/search?q=${query}&type=track&limit=1`,
+          {
+            headers: { Authorization: `Bearer ${spotifyToken}` },
+          },
+        );
+
+        if (!searchRes.ok) throw new Error("Search request failed");
+        const searchData = await searchRes.json();
+        const track = searchData.tracks?.items?.[0];
+
+        if (track) {
+          // Play the track on our custom virtual player
+          const playRes = await fetch(
+            `https://api.spotify.com/v1/me/player/play?device_id=${spotifyDeviceId}`,
+            {
+              method: "PUT",
+              headers: {
+                Authorization: `Bearer ${spotifyToken}`,
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ uris: [track.uri] }),
+            },
+          );
+
+          if (!playRes.ok) {
+            throw new Error("Unable to trigger playback on Spotify device");
+          }
+
+          // Instantly pause and wait for the start delay to complete
+          await spotifyPlayer.pause();
+
+          questionStartTimeRef.current = Date.now() + 1500;
+          playbackTimeoutRef.current = setTimeout(async () => {
+            try {
+              await spotifyPlayer.resume();
+              setAudioPlaying(true);
+            } catch (e) {
+              console.error("Spotify resume failed:", e);
+            }
+            questionStartTimeRef.current = Date.now();
+          }, 1500);
+
+          return; // Successfully triggered Spotify, skip iTunes fallback
+        } else {
+          console.warn(
+            "Track not found on Spotify. Falling back to iTunes preview.",
+          );
+          setSpotifyPlaybackFallback(true);
+        }
+      } catch (err) {
+        console.error("Spotify playback failed, falling back to iTunes:", err);
+        setSpotifyPlaybackFallback(true);
+      }
+    }
+
+    // Default iTunes Playback Engine fallback
     const audio = new Audio(song.previewUrl);
     audio.volume = 0.8;
     audioRef.current = audio;
@@ -364,12 +796,11 @@ function App() {
         .then(() => setAudioPlaying(true))
         .catch((e) => console.error("Audio auto-play failed:", e));
 
-      // Start response timer when the audio actually begins playing
       questionStartTimeRef.current = Date.now();
     }, 1500);
   };
 
-  const handleMakeGuess = (letter: string) => {
+  const handleMakeGuess = async (letter: string) => {
     if (guessLocked) return;
 
     // Clear any pending playback timeout
@@ -389,6 +820,18 @@ function App() {
       audioRef.current.pause();
     }
 
+    if (
+      spotifyPlayer &&
+      playbackEngine === "spotify" &&
+      !spotifyPlaybackFallback
+    ) {
+      try {
+        await spotifyPlayer.pause();
+      } catch (e) {
+        console.error("Failed to pause Spotify player on guess:", e);
+      }
+    }
+
     const newGuess: Guess = {
       song: roundSongs[currentSongIndex],
       guessType: currentGuessType,
@@ -401,7 +844,26 @@ function App() {
     setGuesses((prev) => [...prev, newGuess]);
   };
 
-  const handleTogglePlay = () => {
+  const handleTogglePlay = async () => {
+    if (
+      playbackEngine === "spotify" &&
+      spotifyPlayer &&
+      !spotifyPlaybackFallback
+    ) {
+      try {
+        if (audioPlaying) {
+          await spotifyPlayer.pause();
+          setAudioPlaying(false);
+        } else {
+          await spotifyPlayer.resume();
+          setAudioPlaying(true);
+        }
+      } catch (e) {
+        console.error("Failed to toggle Spotify playback:", e);
+      }
+      return;
+    }
+
     const audio = audioRef.current;
     if (!audio) return;
 
@@ -416,36 +878,73 @@ function App() {
     }
   };
 
-  const handleScrubAudio = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleScrubAudio = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const time = parseFloat(e.target.value);
+
+    if (
+      playbackEngine === "spotify" &&
+      spotifyPlayer &&
+      !spotifyPlaybackFallback
+    ) {
+      try {
+        await spotifyPlayer.seek(time * 1000);
+        setAudioProgress(time);
+      } catch (e) {
+        console.error("Failed to seek Spotify:", e);
+      }
+      return;
+    }
+
     const audio = audioRef.current;
     if (!audio) return;
-    const time = parseFloat(e.target.value);
     audio.currentTime = time;
     setAudioProgress(time);
   };
 
-  const handleNextSong = () => {
+  const handleNextSong = async () => {
     const nextIndex = currentSongIndex + 1;
     if (nextIndex < roundSongs.length) {
       setCurrentSongIndex(nextIndex);
-      prepareQuestion(roundSongs[nextIndex]);
+      await prepareQuestion(roundSongs[nextIndex]);
     } else {
       // End of round
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current = null;
       }
+      if (
+        spotifyPlayer &&
+        playbackEngine === "spotify" &&
+        !spotifyPlaybackFallback
+      ) {
+        try {
+          await spotifyPlayer.pause();
+        } catch (e) {
+          console.error("Failed to pause Spotify player on end:", e);
+        }
+      }
       setGameStage("review");
     }
   };
 
-  const handleQuitGame = () => {
+  const handleQuitGame = async () => {
     if (playbackTimeoutRef.current) {
       clearTimeout(playbackTimeoutRef.current);
     }
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current = null;
+    }
+    if (
+      spotifyPlayer &&
+      playbackEngine === "spotify" &&
+      !spotifyPlaybackFallback
+    ) {
+      try {
+        await spotifyPlayer.pause();
+      } catch (e) {
+        console.error("Failed to pause Spotify player on quit:", e);
+      }
     }
     setGameStage("setup");
   };
@@ -567,6 +1066,154 @@ function App() {
             </div>
           </div>
 
+          {playbackEngine === "spotify" && (
+            <div className="form-section">
+              <span className="form-label">Spotify Clip Limit</span>
+              <div className="slider-container">
+                <input
+                  type="range"
+                  min="0"
+                  max="120"
+                  step="5"
+                  value={spotifyClipLimit}
+                  onChange={(e) => {
+                    const val = parseInt(e.target.value, 10);
+                    setSpotifyClipLimit(val);
+                    localStorage.setItem("spotify_clip_limit", val.toString());
+                  }}
+                />
+                <span className="slider-value">
+                  {spotifyClipLimit === 0
+                    ? "Full Song"
+                    : `${spotifyClipLimit}s`}
+                </span>
+              </div>
+            </div>
+          )}
+
+          <div className="form-section">
+            <span className="form-label">Playback Source</span>
+            <div className="radio-group">
+              <button
+                className={`chip-btn ${playbackEngine === "itunes" ? "active" : ""}`}
+                onClick={() => {
+                  setPlaybackEngine("itunes");
+                  localStorage.setItem("playback_engine", "itunes");
+                }}
+              >
+                iTunes Previews (Free)
+              </button>
+              <button
+                className={`chip-btn ${playbackEngine === "spotify" ? "active" : ""}`}
+                onClick={() => {
+                  setPlaybackEngine("spotify");
+                  localStorage.setItem("playback_engine", "spotify");
+                  if (!spotifyToken) {
+                    setSpotifyStatus("disconnected");
+                  }
+                }}
+              >
+                Spotify Premium (Full Tracks)
+              </button>
+            </div>
+
+            {playbackEngine === "spotify" && (
+              <div className="spotify-connection-card">
+                {spotifyStatus === "disconnected" && (
+                  <div className="spotify-setup">
+                    <p className="card-desc">
+                      Spotify requires a developer Client ID for client-side
+                      authentication. Register an application on the{" "}
+                      <a
+                        href="https://developer.spotify.com/dashboard"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Spotify Developer Dashboard
+                      </a>{" "}
+                      with Redirect URI set to{" "}
+                      <code>
+                        {window.location.origin + window.location.pathname}
+                      </code>
+                      .
+                    </p>
+                    <div className="spotify-input-row">
+                      <input
+                        type="text"
+                        placeholder="Paste your Spotify Client ID"
+                        value={spotifyClientId}
+                        onChange={(e) => {
+                          const val = e.target.value.trim();
+                          setSpotifyClientId(val);
+                          localStorage.setItem("spotify_client_id", val);
+                        }}
+                        className="spotify-input"
+                      />
+                      <button
+                        disabled={!spotifyClientId}
+                        onClick={async () => {
+                          const verifier = generateRandomString(64);
+                          localStorage.setItem(
+                            "spotify_code_verifier",
+                            verifier,
+                          );
+                          const challenge =
+                            await generateCodeChallenge(verifier);
+
+                          const scopes =
+                            "streaming user-read-playback-state user-modify-playback-state user-read-private user-read-email";
+                          const redirectUri =
+                            window.location.origin + window.location.pathname;
+                          const authUrl = `https://accounts.spotify.com/authorize?client_id=${spotifyClientId}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&code_challenge_method=S256&code_challenge=${challenge}&scope=${encodeURIComponent(scopes)}`;
+
+                          window.location.href = authUrl;
+                        }}
+                        className="spotify-connect-btn"
+                      >
+                        Connect Spotify
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {spotifyStatus === "connecting" && (
+                  <div className="spotify-loading">
+                    <div className="spinner"></div>
+                    <span>Initializing Web Playback Player...</span>
+                  </div>
+                )}
+
+                {spotifyStatus === "connected" && spotifyUserInfo && (
+                  <div className="spotify-connected">
+                    <span className="spotify-user-badge">
+                      Connected as{" "}
+                      <strong>{spotifyUserInfo.display_name}</strong> (
+                      {spotifyUserInfo.product})
+                    </span>
+                    <button
+                      onClick={handleSpotifyDisconnect}
+                      className="spotify-disconnect-link"
+                    >
+                      Disconnect
+                    </button>
+                  </div>
+                )}
+
+                {spotifyStatus === "error" && (
+                  <div className="spotify-error-card">
+                    <span className="error-msg">Error: {spotifyError}</span>
+                    <button
+                      onClick={handleSpotifyDisconnect}
+                      className="spotify-retry-btn"
+                    >
+                      Reset Connection
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
           <button className="cta-btn" onClick={handleStartGame}>
             Start Round
           </button>
@@ -603,22 +1250,37 @@ function App() {
             ))}
           </div>
 
-          {!guessLocked && (
-            <div className="clip-progress-container">
-              <div className="clip-progress-bar">
-                <div
-                  className="clip-progress-fill"
-                  style={{
-                    width: `${(audioProgress / (audioDuration || 30)) * 100}%`,
-                  }}
-                ></div>
-              </div>
-              <div className="clip-time-display">
-                {Math.max(0, Math.ceil((audioDuration || 30) - audioProgress))}s
-                remaining
-              </div>
-            </div>
-          )}
+          {!guessLocked &&
+            (() => {
+              const activeLimit =
+                playbackEngine === "spotify" && spotifyClipLimit > 0
+                  ? spotifyClipLimit
+                  : audioDuration || 30;
+              const remaining = Math.max(
+                0,
+                Math.ceil(activeLimit - audioProgress),
+              );
+              const progressPercent = Math.min(
+                100,
+                (audioProgress / activeLimit) * 100,
+              );
+
+              return (
+                <div className="clip-progress-container">
+                  <div className="clip-progress-bar">
+                    <div
+                      className="clip-progress-fill"
+                      style={{ width: `${progressPercent}%` }}
+                    ></div>
+                  </div>
+                  <div className="clip-time-display">
+                    {playbackEngine === "spotify" && spotifyClipLimit === 0
+                      ? `Playing full song... ${Math.floor(audioProgress)}s elapsed`
+                      : `${remaining}s remaining`}
+                  </div>
+                </div>
+              );
+            })()}
 
           <div className="prompt-text">
             Guess the{" "}
@@ -759,6 +1421,24 @@ function App() {
                   ? "Show Results"
                   : "Next Song"}
               </button>
+            )}
+          </div>
+
+          <div className="playback-status-badge">
+            {playbackEngine === "spotify" ? (
+              spotifyPlaybackFallback ? (
+                <span className="badge-text fallback">
+                  ⚠️ Spotify track not found, playing iTunes preview
+                </span>
+              ) : (
+                <span className="badge-text spotify">
+                  🟢 Streaming via Spotify Premium (Full track)
+                </span>
+              )
+            ) : (
+              <span className="badge-text itunes">
+                🔵 Playing 30s iTunes preview
+              </span>
             )}
           </div>
         </main>

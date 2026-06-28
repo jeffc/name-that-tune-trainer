@@ -45,4 +45,6 @@ _(Instructions to be updated as codebase is built out)_
 
 ## TODO & Roadmap
 
-- [ ] **Spotify Playback Mode Integration** (High Priority): Integrate the Spotify Web Playback SDK / Connect API to support full-length audio tracks. This will provide users with an option to toggle between iTunes 30-second audio previews (which can start midway through a track) and Spotify's full track streaming (which guarantees playback starting from the true beginning of the song).
+- [x] **Spotify Playback Mode Integration**: Integrated the Spotify Web Playback SDK / Connect API to support full-length audio tracks. This provides users with an option to toggle between iTunes 30-second audio previews (which can start midway through a track) and Spotify's full track streaming (which guarantees playback starting from the true beginning of the song).
+- [ ] **External Spotify Device Control Mode**: Support a playback mode that redirects play, pause, and seek commands to an external active Spotify Connect device (such as a smart speaker, TV, desktop client, or phone app) via the Spotify Player API, rather than rendering audio locally inside the browser tab via the Web Playback SDK.
+- [ ] **Automated Database Updates via GitHub Actions**: Configure a scheduled GitHub Action workflow (cron) that executes the unified `update-songs.js` pipeline weekly. The workflow would check for new Billboard chart outputs, scrape iTunes metadata for missing songs, rebuild the condensed database, and commit/push updates back to the repository automatically.
