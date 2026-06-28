@@ -74,7 +74,7 @@ async function run() {
   const targetCount = Math.min(limit, missingSongs.length);
 
   if (dryRun) {
-    const ESTIMATED_MS_PER_QUERY = 800; // 600ms sleep + ~200ms network latency
+    const ESTIMATED_MS_PER_QUERY = 2000; // 1800ms sleep + ~200ms network latency
     const targetTimeMs = targetCount * ESTIMATED_MS_PER_QUERY;
     const remainingTimeMs = missingSongs.length * ESTIMATED_MS_PER_QUERY;
 
@@ -138,14 +138,37 @@ async function run() {
     console.log(`[${i + 1}/${targetCount}] (${progress}%) ETA: ${etaString} | Searching: "${song.title}" by ${song.artist}...`);
 
     try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`HTTP error ${response.status}`);
+      let attempts = 0;
+      let result = null;
+      
+      while (attempts < 3) {
+        try {
+          const response = await fetch(url);
+          
+          if (response.status === 403 || response.status === 429) {
+            console.warn(`\n[WARNING] Rate limit encountered (HTTP ${response.status}). Pausing execution for 35 seconds to back off...`);
+            await sleep(35000);
+            attempts++;
+            continue;
+          }
+          
+          if (!response.ok) {
+            throw new Error(`HTTP error ${response.status}`);
+          }
+          
+          result = await response.json();
+          break; // success
+        } catch (fetchErr) {
+          attempts++;
+          if (attempts >= 3) {
+            throw fetchErr;
+          }
+          console.warn(`   -> Retry attempt ${attempts} due to error: ${fetchErr.message}. Waiting 5 seconds...`);
+          await sleep(5000);
+        }
       }
       
-      const result = await response.json();
-      
-      if (result.results && result.results.length > 0) {
+      if (result && result.results && result.results.length > 0) {
         const itunes = result.results[0];
         
         rawData.songs.push({
@@ -181,13 +204,13 @@ async function run() {
       saveDatabase();
       
     } catch (err) {
-      console.error(`   -> Error fetching "${query}":`, err.message);
-      // Wait longer if we hit an error to be safe
+      console.error(`   -> Failed to enrich "${query}":`, err.message);
+      // Wait longer on critical failure
       await sleep(3000);
     }
     
-    // Add delay between requests to be polite to iTunes API
-    await sleep(600);
+    // Add delay between requests to remain safely under the rate limit (~1,800/hour cap)
+    await sleep(1800);
   }
 
   console.log(`\nEnrichment round completed.`);
