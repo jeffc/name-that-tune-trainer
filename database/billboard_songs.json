@@ -5,7 +5,7 @@
       "peak_position_lte": 20,
       "weeks_on_chart_gte": 16
     },
-    "totalSongs": 11959
+    "totalSongs": 11704
   },
   "songs": [
     {
@@ -320,13 +320,6 @@
       "title": "Dust",
       "artist": "Drake",
       "peak_position": 8,
-      "weeks_on_chart": 5,
-      "last_chart_date": "2026-06-27"
-    },
-    {
-      "title": "2 Hard 4 The Radio",
-      "artist": "Drake",
-      "peak_position": 9,
       "weeks_on_chart": 5,
       "last_chart_date": "2026-06-27"
     },
@@ -800,13 +793,6 @@
       "last_chart_date": "2026-03-14"
     },
     {
-      "title": "20 Cigarettes",
-      "artist": "Morgan Wallen",
-      "peak_position": 15,
-      "weeks_on_chart": 41,
-      "last_chart_date": "2026-03-14"
-    },
-    {
       "title": "Favorite Country Song",
       "artist": "HARDY",
       "peak_position": 38,
@@ -832,13 +818,6 @@
       "artist": "Bad Bunny",
       "peak_position": 14,
       "weeks_on_chart": 20,
-      "last_chart_date": "2026-03-07"
-    },
-    {
-      "title": "12 To 12",
-      "artist": "sombr",
-      "peak_position": 41,
-      "weeks_on_chart": 28,
       "last_chart_date": "2026-03-07"
     },
     {
@@ -1008,13 +987,6 @@
       "peak_position": 4,
       "weeks_on_chart": 15,
       "last_chart_date": "2026-01-31"
-    },
-    {
-      "title": "6 Months Later",
-      "artist": "Megan Moroney",
-      "peak_position": 29,
-      "weeks_on_chart": 30,
-      "last_chart_date": "2026-01-24"
     },
     {
       "title": "Soda Pop",
@@ -1731,13 +1703,6 @@
       "last_chart_date": "2025-09-06"
     },
     {
-      "title": "30 For 30",
-      "artist": "SZA With Kendrick Lamar",
-      "peak_position": 10,
-      "weeks_on_chart": 36,
-      "last_chart_date": "2025-09-06"
-    },
-    {
       "title": "I Had Some Help",
       "artist": "Post Malone Featuring Morgan Wallen",
       "peak_position": 1,
@@ -2109,13 +2074,6 @@
       "last_chart_date": "2025-04-12"
     },
     {
-      "title": "4x4xU",
-      "artist": "Lainey Wilson",
-      "peak_position": 45,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2025-04-12"
-    },
-    {
       "title": "Too Sweet",
       "artist": "Hozier",
       "peak_position": 1,
@@ -2235,13 +2193,6 @@
       "last_chart_date": "2025-03-01"
     },
     {
-      "title": "4X4",
-      "artist": "Travis Scott",
-      "peak_position": 1,
-      "weeks_on_chart": 4,
-      "last_chart_date": "2025-03-01"
-    },
-    {
       "title": "Humble.",
       "artist": "Kendrick Lamar",
       "peak_position": 1,
@@ -2351,13 +2302,6 @@
       "artist": "Tito Double P & Peso Pluma",
       "peak_position": 51,
       "weeks_on_chart": 20,
-      "last_chart_date": "2025-02-01"
-    },
-    {
-      "title": "25",
-      "artist": "Rod Wave",
-      "peak_position": 16,
-      "weeks_on_chart": 14,
       "last_chart_date": "2025-02-01"
     },
     {
@@ -2508,13 +2452,6 @@
       "last_chart_date": "2024-11-30"
     },
     {
-      "title": "28",
-      "artist": "Zach Bryan",
-      "peak_position": 14,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2024-11-30"
-    },
-    {
       "title": "Lonely Road",
       "artist": "mgk & Jelly Roll",
       "peak_position": 33,
@@ -2541,13 +2478,6 @@
       "peak_position": 16,
       "weeks_on_chart": 4,
       "last_chart_date": "2024-11-30"
-    },
-    {
-      "title": "Prove It",
-      "artist": "21 Savage & Summer Walker",
-      "peak_position": 43,
-      "weeks_on_chart": 19,
-      "last_chart_date": "2024-11-23"
     },
     {
       "title": "Austin",
@@ -2617,13 +2547,6 @@
       "artist": "Mark Ambor",
       "peak_position": 74,
       "weeks_on_chart": 24,
-      "last_chart_date": "2024-11-02"
-    },
-    {
-      "title": "360",
-      "artist": "Charli XCX",
-      "peak_position": 41,
-      "weeks_on_chart": 20,
       "last_chart_date": "2024-11-02"
     },
     {
@@ -3047,13 +2970,6 @@
       "last_chart_date": "2024-06-15"
     },
     {
-      "title": "Redrum",
-      "artist": "21 Savage",
-      "peak_position": 5,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2024-06-08"
-    },
-    {
       "title": "The Alchemy",
       "artist": "Taylor Swift",
       "peak_position": 13,
@@ -3075,13 +2991,6 @@
       "last_chart_date": "2024-06-08"
     },
     {
-      "title": "Act II: Date @ 8",
-      "artist": "4Batz Featuring Drake",
-      "peak_position": 7,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2024-06-01"
-    },
-    {
       "title": "Fresh Out The Slammer",
       "artist": "Taylor Swift",
       "peak_position": 11,
@@ -3100,13 +3009,6 @@
       "artist": "Taylor Swift",
       "peak_position": 1,
       "weeks_on_chart": 54,
-      "last_chart_date": "2024-05-25"
-    },
-    {
-      "title": "23",
-      "artist": "Chayce Beckham",
-      "peak_position": 45,
-      "weeks_on_chart": 20,
       "last_chart_date": "2024-05-25"
     },
     {
@@ -3170,13 +3072,6 @@
       "artist": "Nicki Minaj",
       "peak_position": 15,
       "weeks_on_chart": 20,
-      "last_chart_date": "2024-05-04"
-    },
-    {
-      "title": "Soak City",
-      "artist": "310babii",
-      "peak_position": 53,
-      "weeks_on_chart": 19,
       "last_chart_date": "2024-05-04"
     },
     {
@@ -3282,13 +3177,6 @@
       "artist": "Beyonce & Post Malone",
       "peak_position": 16,
       "weeks_on_chart": 2,
-      "last_chart_date": "2024-04-20"
-    },
-    {
-      "title": "7 Minute Drill",
-      "artist": "J. Cole",
-      "peak_position": 6,
-      "weeks_on_chart": 1,
       "last_chart_date": "2024-04-20"
     },
     {
@@ -3408,13 +3296,6 @@
       "artist": "Fuerza Regida & Marshmello",
       "peak_position": 40,
       "weeks_on_chart": 20,
-      "last_chart_date": "2024-03-30"
-    },
-    {
-      "title": "Nee-nah",
-      "artist": "21 Savage, Travis Scott & Metro Boomin",
-      "peak_position": 10,
-      "weeks_on_chart": 10,
       "last_chart_date": "2024-03-30"
     },
     {
@@ -3572,31 +3453,10 @@
       "last_chart_date": "2024-02-17"
     },
     {
-      "title": "500lbs",
-      "artist": "Lil Tecca",
-      "peak_position": 51,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2024-02-17"
-    },
-    {
       "title": "My Love Mine All Mine",
       "artist": "Mitski",
       "peak_position": 26,
       "weeks_on_chart": 20,
-      "last_chart_date": "2024-02-17"
-    },
-    {
-      "title": "All Of Me",
-      "artist": "21 Savage",
-      "peak_position": 18,
-      "weeks_on_chart": 4,
-      "last_chart_date": "2024-02-17"
-    },
-    {
-      "title": "N.H.I.E.",
-      "artist": "21 Savage & Doja Cat",
-      "peak_position": 19,
-      "weeks_on_chart": 4,
       "last_chart_date": "2024-02-17"
     },
     {
@@ -3758,13 +3618,6 @@
       "artist": "Travis Scott Featuring Drake",
       "peak_position": 3,
       "weeks_on_chart": 19,
-      "last_chart_date": "2023-12-16"
-    },
-    {
-      "title": "3D",
-      "artist": "Jung Kook & Jack Harlow",
-      "peak_position": 5,
-      "weeks_on_chart": 9,
       "last_chart_date": "2023-12-16"
     },
     {
@@ -3992,13 +3845,6 @@
       "last_chart_date": "2023-11-04"
     },
     {
-      "title": "8am In Charlotte",
-      "artist": "Drake",
-      "peak_position": 17,
-      "weeks_on_chart": 3,
-      "last_chart_date": "2023-11-04"
-    },
-    {
       "title": "What Would Pluto Do",
       "artist": "Drake",
       "peak_position": 18,
@@ -4030,13 +3876,6 @@
       "title": "Amen",
       "artist": "Drake Featuring Teezo Touchdown",
       "peak_position": 15,
-      "weeks_on_chart": 2,
-      "last_chart_date": "2023-10-28"
-    },
-    {
-      "title": "7969 Santa",
-      "artist": "Drake",
-      "peak_position": 16,
       "weeks_on_chart": 2,
       "last_chart_date": "2023-10-28"
     },
@@ -5252,13 +5091,6 @@
       "last_chart_date": "2022-11-26"
     },
     {
-      "title": "5 Foot 9",
-      "artist": "Tyler Hubbard",
-      "peak_position": 22,
-      "weeks_on_chart": 22,
-      "last_chart_date": "2022-11-19"
-    },
-    {
       "title": "Staying Alive",
       "artist": "DJ Khaled Featuring Drake & Lil Baby",
       "peak_position": 5,
@@ -5917,13 +5749,6 @@
       "last_chart_date": "2022-05-28"
     },
     {
-      "title": "712PM",
-      "artist": "Future",
-      "peak_position": 8,
-      "weeks_on_chart": 3,
-      "last_chart_date": "2022-05-28"
-    },
-    {
       "title": "The Heart Part 5",
       "artist": "Kendrick Lamar",
       "peak_position": 15,
@@ -5983,13 +5808,6 @@
       "title": "Beers On Me",
       "artist": "Dierks Bentley, BRELAND & HARDY",
       "peak_position": 40,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2022-05-21"
-    },
-    {
-      "title": "23",
-      "artist": "Sam Hunt",
-      "peak_position": 50,
       "weeks_on_chart": 20,
       "last_chart_date": "2022-05-21"
     },
@@ -6575,13 +6393,6 @@
       "last_chart_date": "2021-11-20"
     },
     {
-      "title": "2055",
-      "artist": "Sleepy Hallow",
-      "peak_position": 51,
-      "weeks_on_chart": 17,
-      "last_chart_date": "2021-11-20"
-    },
-    {
       "title": "Hurricane",
       "artist": "Kanye West",
       "peak_position": 6,
@@ -6782,13 +6593,6 @@
       "artist": "Kanye West",
       "peak_position": 11,
       "weeks_on_chart": 4,
-      "last_chart_date": "2021-10-02"
-    },
-    {
-      "title": "7am On Bridle Path",
-      "artist": "Drake",
-      "peak_position": 16,
-      "weeks_on_chart": 3,
       "last_chart_date": "2021-10-02"
     },
     {
@@ -7009,13 +6813,6 @@
       "last_chart_date": "2021-08-14"
     },
     {
-      "title": "Mood",
-      "artist": "24kGoldn Featuring iann dior",
-      "peak_position": 1,
-      "weeks_on_chart": 52,
-      "last_chart_date": "2021-08-14"
-    },
-    {
       "title": "One Too Many",
       "artist": "Keith Urban Duet With P!nk",
       "peak_position": 52,
@@ -7205,13 +7002,6 @@
       "last_chart_date": "2021-07-03"
     },
     {
-      "title": "1 Step Forward, 3 Steps Back",
-      "artist": "Olivia Rodrigo",
-      "peak_position": 19,
-      "weeks_on_chart": 4,
-      "last_chart_date": "2021-06-26"
-    },
-    {
       "title": "Back In Blood",
       "artist": "Pooh Shiesty Featuring Lil Durk",
       "peak_position": 13,
@@ -7289,13 +7079,6 @@
       "last_chart_date": "2021-06-12"
     },
     {
-      "title": "95.south",
-      "artist": "J. Cole",
-      "peak_position": 8,
-      "weeks_on_chart": 3,
-      "last_chart_date": "2021-06-12"
-    },
-    {
       "title": "Streets",
       "artist": "Doja Cat",
       "peak_position": 16,
@@ -7313,13 +7096,6 @@
       "title": "applying.pressure",
       "artist": "J. Cole",
       "peak_position": 13,
-      "weeks_on_chart": 2,
-      "last_chart_date": "2021-06-05"
-    },
-    {
-      "title": "100.mil'",
-      "artist": "J. Cole & Bas",
-      "peak_position": 14,
       "weeks_on_chart": 2,
       "last_chart_date": "2021-06-05"
     },
@@ -7377,13 +7153,6 @@
       "artist": "Ariana Grande",
       "peak_position": 1,
       "weeks_on_chart": 29,
-      "last_chart_date": "2021-05-22"
-    },
-    {
-      "title": "34+35",
-      "artist": "Ariana Grande Feat. Doja Cat & Megan Thee Stallion",
-      "peak_position": 2,
-      "weeks_on_chart": 28,
       "last_chart_date": "2021-05-22"
     },
     {
@@ -7695,24 +7464,10 @@
       "last_chart_date": "2021-02-13"
     },
     {
-      "title": "7 Summers",
-      "artist": "Morgan Wallen",
-      "peak_position": 6,
-      "weeks_on_chart": 24,
-      "last_chart_date": "2021-02-13"
-    },
-    {
       "title": "Diamonds",
       "artist": "Sam Smith",
       "peak_position": 39,
       "weeks_on_chart": 20,
-      "last_chart_date": "2021-02-13"
-    },
-    {
-      "title": "Mr. Right Now",
-      "artist": "21 Savage & Metro Boomin Featuring Drake",
-      "peak_position": 10,
-      "weeks_on_chart": 18,
       "last_chart_date": "2021-02-13"
     },
     {
@@ -7947,13 +7702,6 @@
       "last_chart_date": "2020-11-28"
     },
     {
-      "title": "Runnin",
-      "artist": "21 Savage & Metro Boomin",
-      "peak_position": 9,
-      "weeks_on_chart": 7,
-      "last_chart_date": "2020-11-28"
-    },
-    {
       "title": "Roses",
       "artist": "SAINt JHN",
       "peak_position": 4,
@@ -8024,13 +7772,6 @@
       "last_chart_date": "2020-11-07"
     },
     {
-      "title": "3 Headed Goat",
-      "artist": "Lil Durk Featuring Lil Baby & Polo G",
-      "peak_position": 43,
-      "weeks_on_chart": 16,
-      "last_chart_date": "2020-10-31"
-    },
-    {
       "title": "Dollaz On My Head",
       "artist": "Gunna Featuring Young Thug",
       "peak_position": 38,
@@ -8049,13 +7790,6 @@
       "artist": "BLACKPINK X Selena Gomez",
       "peak_position": 13,
       "weeks_on_chart": 8,
-      "last_chart_date": "2020-10-31"
-    },
-    {
-      "title": "Glock In My Lap",
-      "artist": "21 Savage & Metro Boomin",
-      "peak_position": 19,
-      "weeks_on_chart": 3,
       "last_chart_date": "2020-10-31"
     },
     {
@@ -8210,13 +7944,6 @@
       "artist": "Keith Urban",
       "peak_position": 60,
       "weeks_on_chart": 20,
-      "last_chart_date": "2020-09-12"
-    },
-    {
-      "title": "The 1",
-      "artist": "Taylor Swift",
-      "peak_position": 4,
-      "weeks_on_chart": 6,
       "last_chart_date": "2020-09-12"
     },
     {
@@ -8388,13 +8115,6 @@
       "last_chart_date": "2020-07-25"
     },
     {
-      "title": "Gooba",
-      "artist": "6ix9ine",
-      "peak_position": 3,
-      "weeks_on_chart": 10,
-      "last_chart_date": "2020-07-25"
-    },
-    {
       "title": "High Fashion",
       "artist": "Roddy Ricch Featuring Mustard",
       "peak_position": 20,
@@ -8420,13 +8140,6 @@
       "artist": "Bad Bunny",
       "peak_position": 53,
       "weeks_on_chart": 17,
-      "last_chart_date": "2020-07-18"
-    },
-    {
-      "title": "Trollz",
-      "artist": "6ix9ine & Nicki Minaj",
-      "peak_position": 1,
-      "weeks_on_chart": 4,
       "last_chart_date": "2020-07-18"
     },
     {
@@ -8665,13 +8378,6 @@
       "artist": "Travis Scott",
       "peak_position": 1,
       "weeks_on_chart": 22,
-      "last_chart_date": "2020-05-09"
-    },
-    {
-      "title": "10,000 Hours",
-      "artist": "Dan + Shay & Justin Bieber",
-      "peak_position": 4,
-      "weeks_on_chart": 30,
       "last_chart_date": "2020-05-09"
     },
     {
@@ -9050,13 +8756,6 @@
       "artist": "Chris Brown Featuring Gunna",
       "peak_position": 36,
       "weeks_on_chart": 20,
-      "last_chart_date": "2020-01-25"
-    },
-    {
-      "title": "223's",
-      "artist": "YNW Melly & 9lokknine",
-      "peak_position": 34,
-      "weeks_on_chart": 19,
       "last_chart_date": "2020-01-25"
     },
     {
@@ -9452,20 +9151,6 @@
       "last_chart_date": "2019-09-21"
     },
     {
-      "title": "Easier",
-      "artist": "5 Seconds Of Summer",
-      "peak_position": 48,
-      "weeks_on_chart": 16,
-      "last_chart_date": "2019-09-21"
-    },
-    {
-      "title": "7 Rings",
-      "artist": "Ariana Grande",
-      "peak_position": 1,
-      "weeks_on_chart": 33,
-      "last_chart_date": "2019-09-14"
-    },
-    {
       "title": "Whiskey Glasses",
       "artist": "Morgan Wallen",
       "peak_position": 17,
@@ -9540,13 +9225,6 @@
       "artist": "Meek Mill Featuring Drake",
       "peak_position": 6,
       "weeks_on_chart": 37,
-      "last_chart_date": "2019-08-24"
-    },
-    {
-      "title": "24/7",
-      "artist": "Meek Mill Featuring Ella Mai",
-      "peak_position": 54,
-      "weeks_on_chart": 19,
       "last_chart_date": "2019-08-24"
     },
     {
@@ -9844,13 +9522,6 @@
       "last_chart_date": "2019-06-15"
     },
     {
-      "title": "A Lot",
-      "artist": "21 Savage",
-      "peak_position": 12,
-      "weeks_on_chart": 23,
-      "last_chart_date": "2019-06-08"
-    },
-    {
       "title": "Thotiana",
       "artist": "Blueface",
       "peak_position": 8,
@@ -9954,13 +9625,6 @@
       "peak_position": 38,
       "weeks_on_chart": 20,
       "last_chart_date": "2019-05-18"
-    },
-    {
-      "title": "Youngblood",
-      "artist": "5 Seconds Of Summer",
-      "peak_position": 7,
-      "weeks_on_chart": 48,
-      "last_chart_date": "2019-05-11"
     },
     {
       "title": "Better Now",
@@ -10302,13 +9966,6 @@
       "title": "Ring",
       "artist": "Cardi B Featuring Kehlani",
       "peak_position": 28,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2018-12-15"
-    },
-    {
-      "title": "FEFE",
-      "artist": "6ix9ine Featuring Nicki Minaj & Murda Beatz",
-      "peak_position": 3,
       "weeks_on_chart": 20,
       "last_chart_date": "2018-12-15"
     },
@@ -11181,13 +10838,6 @@
       "last_chart_date": "2018-05-12"
     },
     {
-      "title": "1985 (Intro To The Fall Off)",
-      "artist": "J. Cole",
-      "peak_position": 20,
-      "weeks_on_chart": 2,
-      "last_chart_date": "2018-05-12"
-    },
-    {
       "title": "Wake Me Up!",
       "artist": "Avicii",
       "peak_position": 4,
@@ -11342,13 +10992,6 @@
       "last_chart_date": "2018-04-07"
     },
     {
-      "title": "Gummo",
-      "artist": "6ix9ine",
-      "peak_position": 12,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2018-04-07"
-    },
-    {
       "title": "Betrayed",
       "artist": "Lil Xan",
       "peak_position": 64,
@@ -11482,13 +11125,6 @@
       "last_chart_date": "2018-03-03"
     },
     {
-      "title": "1-800-273-8255",
-      "artist": "Logic Featuring Alessia Cara & Khalid",
-      "peak_position": 3,
-      "weeks_on_chart": 42,
-      "last_chart_date": "2018-02-24"
-    },
-    {
       "title": "Roll In Peace",
       "artist": "Kodak Black Featuring XXXTENTACION",
       "peak_position": 31,
@@ -11563,13 +11199,6 @@
       "artist": "J Balvin & Willy William Featuring Beyonce",
       "peak_position": 3,
       "weeks_on_chart": 30,
-      "last_chart_date": "2018-02-03"
-    },
-    {
-      "title": "Bank Account",
-      "artist": "21 Savage",
-      "peak_position": 12,
-      "weeks_on_chart": 29,
       "last_chart_date": "2018-02-03"
     },
     {
@@ -11846,13 +11475,6 @@
       "last_chart_date": "2017-11-11"
     },
     {
-      "title": "It's A Vibe",
-      "artist": "2 Chainz Featuring Ty Dolla $ign, Trey Songz & Jhene Aiko",
-      "peak_position": 44,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2017-11-11"
-    },
-    {
       "title": "Friends",
       "artist": "Justin Bieber + BloodPop",
       "peak_position": 20,
@@ -12056,13 +11678,6 @@
       "last_chart_date": "2017-09-09"
     },
     {
-      "title": "2U",
-      "artist": "David Guetta Featuring Justin Bieber",
-      "peak_position": 16,
-      "weeks_on_chart": 11,
-      "last_chart_date": "2017-09-09"
-    },
-    {
       "title": "Slippery",
       "artist": "Migos Featuring Gucci Mane",
       "peak_position": 29,
@@ -12175,13 +11790,6 @@
       "last_chart_date": "2017-08-12"
     },
     {
-      "title": "24K Magic",
-      "artist": "Bruno Mars",
-      "peak_position": 4,
-      "weeks_on_chart": 41,
-      "last_chart_date": "2017-08-05"
-    },
-    {
       "title": "Bad And Boujee",
       "artist": "Migos Featuring Lil Uzi Vert",
       "peak_position": 1,
@@ -12250,13 +11858,6 @@
       "peak_position": 4,
       "weeks_on_chart": 13,
       "last_chart_date": "2017-07-22"
-    },
-    {
-      "title": "Good Drank",
-      "artist": "2 Chainz x Gucci Mane x Quavo",
-      "peak_position": 70,
-      "weeks_on_chart": 16,
-      "last_chart_date": "2017-07-15"
     },
     {
       "title": "Cold",
@@ -12623,13 +12224,6 @@
       "last_chart_date": "2017-03-18"
     },
     {
-      "title": "No Heart",
-      "artist": "21 Savage & Metro Boomin",
-      "peak_position": 43,
-      "weeks_on_chart": 19,
-      "last_chart_date": "2017-03-18"
-    },
-    {
       "title": "Broccoli",
       "artist": "D.R.A.M. Featuring Lil Yachty",
       "peak_position": 5,
@@ -12703,13 +12297,6 @@
       "title": "Blue Ain't Your Color",
       "artist": "Keith Urban",
       "peak_position": 24,
-      "weeks_on_chart": 21,
-      "last_chart_date": "2017-02-18"
-    },
-    {
-      "title": "X",
-      "artist": "21 Savage & Metro Boomin Featuring Future",
-      "peak_position": 36,
       "weeks_on_chart": 21,
       "last_chart_date": "2017-02-18"
     },
@@ -12845,13 +12432,6 @@
       "peak_position": 43,
       "weeks_on_chart": 20,
       "last_chart_date": "2017-01-14"
-    },
-    {
-      "title": "1 Night",
-      "artist": "Lil Yachty",
-      "peak_position": 49,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2017-01-07"
     },
     {
       "title": "Do You Mind",
@@ -13190,13 +12770,6 @@
       "last_chart_date": "2016-10-15"
     },
     {
-      "title": "7 Years",
-      "artist": "Lukas Graham",
-      "peak_position": 2,
-      "weeks_on_chart": 36,
-      "last_chart_date": "2016-10-08"
-    },
-    {
       "title": "Stressed Out",
       "artist": "twenty one pilots",
       "peak_position": 2,
@@ -13470,13 +13043,6 @@
       "last_chart_date": "2016-07-16"
     },
     {
-      "title": "2 Phones",
-      "artist": "Kevin Gates",
-      "peak_position": 17,
-      "weeks_on_chart": 25,
-      "last_chart_date": "2016-07-09"
-    },
-    {
       "title": "Humble And Kind",
       "artist": "Tim McGraw",
       "peak_position": 30,
@@ -13603,25 +13169,11 @@
       "last_chart_date": "2016-05-28"
     },
     {
-      "title": "6 Inch",
-      "artist": "Beyonce Featuring The Weeknd",
-      "peak_position": 18,
-      "weeks_on_chart": 3,
-      "last_chart_date": "2016-05-28"
-    },
-    {
       "title": "Summer Sixteen",
       "artist": "Drake",
       "peak_position": 6,
       "weeks_on_chart": 14,
       "last_chart_date": "2016-05-21"
-    },
-    {
-      "title": "1999",
-      "artist": "Prince",
-      "peak_position": 12,
-      "weeks_on_chart": 30,
-      "last_chart_date": "2016-05-14"
     },
     {
       "title": "Little Red Corvette",
@@ -13762,13 +13314,6 @@
       "peak_position": 45,
       "weeks_on_chart": 20,
       "last_chart_date": "2016-04-23"
-    },
-    {
-      "title": "679",
-      "artist": "Fetty Wap Featuring Remy Boyz",
-      "peak_position": 4,
-      "weeks_on_chart": 40,
-      "last_chart_date": "2016-04-16"
     },
     {
       "title": "Like I'm Gonna Lose You",
@@ -14954,13 +14499,6 @@
       "last_chart_date": "2015-04-25"
     },
     {
-      "title": "7/11",
-      "artist": "Beyonce",
-      "peak_position": 13,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2015-04-25"
-    },
-    {
       "title": "Animals",
       "artist": "Maroon 5",
       "peak_position": 3,
@@ -15416,13 +14954,6 @@
       "last_chart_date": "2014-12-20"
     },
     {
-      "title": "0 To 100 / The Catch Up",
-      "artist": "Drake",
-      "peak_position": 35,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2014-12-20"
-    },
-    {
       "title": "Fancy",
       "artist": "Iggy Azalea Featuring Charli XCX",
       "peak_position": 1,
@@ -15521,13 +15052,6 @@
       "last_chart_date": "2014-11-29"
     },
     {
-      "title": "Amnesia",
-      "artist": "5 Seconds Of Summer",
-      "peak_position": 16,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2014-11-29"
-    },
-    {
       "title": "Latch",
       "artist": "Disclosure Featuring Sam Smith",
       "peak_position": 7,
@@ -15602,13 +15126,6 @@
       "artist": "Ariana Grande Featuring Iggy Azalea",
       "peak_position": 2,
       "weeks_on_chart": 25,
-      "last_chart_date": "2014-11-01"
-    },
-    {
-      "title": "2 On",
-      "artist": "Tinashe Featuring ScHoolboy Q",
-      "peak_position": 24,
-      "weeks_on_chart": 24,
       "last_chart_date": "2014-11-01"
     },
     {
@@ -15840,13 +15357,6 @@
       "artist": "MKTO",
       "peak_position": 14,
       "weeks_on_chart": 27,
-      "last_chart_date": "2014-08-30"
-    },
-    {
-      "title": "She Looks So Perfect",
-      "artist": "5 Seconds Of Summer",
-      "peak_position": 24,
-      "weeks_on_chart": 20,
       "last_chart_date": "2014-08-30"
     },
     {
@@ -16242,13 +15752,6 @@
       "last_chart_date": "2014-05-17"
     },
     {
-      "title": "19 You + Me",
-      "artist": "Dan + Shay",
-      "peak_position": 42,
-      "weeks_on_chart": 18,
-      "last_chart_date": "2014-05-17"
-    },
-    {
       "title": "Radioactive",
       "artist": "Imagine Dragons",
       "peak_position": 3,
@@ -16470,13 +15973,6 @@
       "artist": "The Neighbourhood",
       "peak_position": 14,
       "weeks_on_chart": 37,
-      "last_chart_date": "2014-03-08"
-    },
-    {
-      "title": "23",
-      "artist": "Mike WiLL Made-It Featuring Miley Cyrus, Wiz Khalifa & Juicy J",
-      "peak_position": 11,
-      "weeks_on_chart": 23,
       "last_chart_date": "2014-03-08"
     },
     {
@@ -17250,13 +16746,6 @@
       "last_chart_date": "2013-08-03"
     },
     {
-      "title": "22",
-      "artist": "Taylor Swift",
-      "peak_position": 20,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2013-07-27"
-    },
-    {
       "title": "Bitch, Don't Kill My Vibe",
       "artist": "Kendrick Lamar",
       "peak_position": 32,
@@ -17324,13 +16813,6 @@
       "artist": "will.i.am Featuring Justin Bieber",
       "peak_position": 17,
       "weeks_on_chart": 16,
-      "last_chart_date": "2013-07-20"
-    },
-    {
-      "title": "We Own It (Fast & Furious)",
-      "artist": "2 Chainz & Wiz Khalifa",
-      "peak_position": 16,
-      "weeks_on_chart": 7,
       "last_chart_date": "2013-07-20"
     },
     {
@@ -17660,13 +17142,6 @@
       "artist": "Alicia Keys Featuring Nicki Minaj",
       "peak_position": 11,
       "weeks_on_chart": 30,
-      "last_chart_date": "2013-04-13"
-    },
-    {
-      "title": "I'm Different",
-      "artist": "2 Chainz",
-      "peak_position": 27,
-      "weeks_on_chart": 20,
       "last_chart_date": "2013-04-13"
     },
     {
@@ -18006,13 +17481,6 @@
       "last_chart_date": "2013-01-19"
     },
     {
-      "title": "Birthday Song",
-      "artist": "2 Chainz Featuring Kanye West",
-      "peak_position": 47,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2013-01-05"
-    },
-    {
       "title": "Turn On The Lights",
       "artist": "Future",
       "peak_position": 50,
@@ -18090,13 +17558,6 @@
       "last_chart_date": "2012-12-08"
     },
     {
-      "title": "50 Ways To Say Goodbye",
-      "artist": "Train",
-      "peak_position": 20,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2012-12-08"
-    },
-    {
       "title": "Pound The Alarm",
       "artist": "Nicki Minaj",
       "peak_position": 15,
@@ -18132,13 +17593,6 @@
       "last_chart_date": "2012-12-01"
     },
     {
-      "title": "2 Reasons",
-      "artist": "Trey Songz Featuring T.I.",
-      "peak_position": 43,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2012-12-01"
-    },
-    {
       "title": "Mercy",
       "artist": "Kanye West, Big Sean, Pusha T, 2 Chainz",
       "peak_position": 13,
@@ -18157,13 +17611,6 @@
       "artist": "Jason Mraz",
       "peak_position": 8,
       "weeks_on_chart": 44,
-      "last_chart_date": "2012-11-17"
-    },
-    {
-      "title": "No Lie",
-      "artist": "2 Chainz Featuring Drake",
-      "peak_position": 24,
-      "weeks_on_chart": 26,
       "last_chart_date": "2012-11-17"
     },
     {
@@ -18303,13 +17750,6 @@
       "title": "Let's Go",
       "artist": "Calvin Harris Featuring Ne-Yo",
       "peak_position": 17,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2012-10-06"
-    },
-    {
-      "title": "5-1-5-0",
-      "artist": "Dierks Bentley",
-      "peak_position": 33,
       "weeks_on_chart": 20,
       "last_chart_date": "2012-10-06"
     },
@@ -19122,13 +18562,6 @@
       "title": "Strange Clouds",
       "artist": "B.o.B Featuring Lil Wayne",
       "peak_position": 7,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2012-02-25"
-    },
-    {
-      "title": "5 O'Clock",
-      "artist": "T-Pain Featuring Wiz Khalifa & Lily Allen",
-      "peak_position": 10,
       "weeks_on_chart": 20,
       "last_chart_date": "2012-02-25"
     },
@@ -20092,13 +19525,6 @@
       "last_chart_date": "2011-05-21"
     },
     {
-      "title": "6 Foot 7 Foot",
-      "artist": "Lil Wayne Featuring Cory Gunz",
-      "peak_position": 9,
-      "weeks_on_chart": 21,
-      "last_chart_date": "2011-05-21"
-    },
-    {
       "title": "What Do You Want",
       "artist": "Jerrod Niemann",
       "peak_position": 52,
@@ -21058,13 +20484,6 @@
       "last_chart_date": "2010-09-18"
     },
     {
-      "title": "My First Kiss",
-      "artist": "3OH!3 Featuring Ke$ha",
-      "peak_position": 9,
-      "weeks_on_chart": 18,
-      "last_chart_date": "2010-09-18"
-    },
-    {
       "title": "Rock That Body",
       "artist": "The Black Eyed Peas",
       "peak_position": 9,
@@ -21751,13 +21170,6 @@
       "last_chart_date": "2010-03-06"
     },
     {
-      "title": "3",
-      "artist": "Britney Spears",
-      "peak_position": 1,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2010-03-06"
-    },
-    {
       "title": "Money To Blow",
       "artist": "Birdman Featuring Lil Wayne & Drake",
       "peak_position": 26,
@@ -22073,13 +21485,6 @@
       "last_chart_date": "2009-11-21"
     },
     {
-      "title": "21 Guns",
-      "artist": "Green Day",
-      "peak_position": 22,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2009-11-21"
-    },
-    {
       "title": "Untouchable",
       "artist": "Taylor Swift",
       "peak_position": 19,
@@ -22358,13 +21763,6 @@
       "peak_position": 16,
       "weeks_on_chart": 20,
       "last_chart_date": "2009-09-12"
-    },
-    {
-      "title": "Don't Trust Me",
-      "artist": "3OH!3",
-      "peak_position": 7,
-      "weeks_on_chart": 37,
-      "last_chart_date": "2009-09-05"
     },
     {
       "title": "Halo",
@@ -22652,13 +22050,6 @@
       "peak_position": 11,
       "weeks_on_chart": 16,
       "last_chart_date": "2009-06-27"
-    },
-    {
-      "title": "1, 2, 3, 4",
-      "artist": "Plain White T's",
-      "peak_position": 34,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2009-06-20"
     },
     {
       "title": "Ain't I",
@@ -23585,25 +22976,11 @@
       "last_chart_date": "2008-09-27"
     },
     {
-      "title": "7 Things",
-      "artist": "Miley Cyrus",
-      "peak_position": 9,
-      "weeks_on_chart": 15,
-      "last_chart_date": "2008-09-27"
-    },
-    {
       "title": "All Summer Long",
       "artist": "Hit Masters",
       "peak_position": 19,
       "weeks_on_chart": 5,
       "last_chart_date": "2008-09-27"
-    },
-    {
-      "title": "It's Not My Time",
-      "artist": "3 Doors Down",
-      "peak_position": 17,
-      "weeks_on_chart": 29,
-      "last_chart_date": "2008-09-20"
     },
     {
       "title": "Mercy",
@@ -23753,13 +23130,6 @@
       "last_chart_date": "2008-08-16"
     },
     {
-      "title": "4 Minutes",
-      "artist": "Madonna Featuring Justin Timberlake & Timbaland",
-      "peak_position": 3,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2008-08-16"
-    },
-    {
       "title": "Back When I Knew It All",
       "artist": "Montgomery Gentry",
       "peak_position": 56,
@@ -23896,13 +23266,6 @@
       "title": "Picture To Burn",
       "artist": "Taylor Swift",
       "peak_position": 28,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2008-07-12"
-    },
-    {
-      "title": "She Got It",
-      "artist": "2 Pistols Featuring T-Pain & Tay Dizm",
-      "peak_position": 24,
       "weeks_on_chart": 20,
       "last_chart_date": "2008-07-12"
     },
@@ -24607,13 +23970,6 @@
       "last_chart_date": "2008-01-19"
     },
     {
-      "title": "1234",
-      "artist": "Feist",
-      "peak_position": 8,
-      "weeks_on_chart": 15,
-      "last_chart_date": "2008-01-19"
-    },
-    {
       "title": "Me Love",
       "artist": "Sean Kingston",
       "peak_position": 14,
@@ -24653,13 +24009,6 @@
       "artist": "J. Holiday",
       "peak_position": 5,
       "weeks_on_chart": 23,
-      "last_chart_date": "2008-01-05"
-    },
-    {
-      "title": "Ayo Technology",
-      "artist": "50 Cent Featuring Justin Timberlake & Timbaland",
-      "peak_position": 5,
-      "weeks_on_chart": 20,
       "last_chart_date": "2008-01-05"
     },
     {
@@ -24744,13 +24093,6 @@
       "artist": "Akon",
       "peak_position": 7,
       "weeks_on_chart": 19,
-      "last_chart_date": "2007-12-08"
-    },
-    {
-      "title": "I Get Money",
-      "artist": "50 Cent",
-      "peak_position": 20,
-      "weeks_on_chart": 14,
       "last_chart_date": "2007-12-08"
     },
     {
@@ -25020,13 +24362,6 @@
       "last_chart_date": "2007-09-22"
     },
     {
-      "title": "4 In The Morning",
-      "artist": "Gwen Stefani",
-      "peak_position": 54,
-      "weeks_on_chart": 16,
-      "last_chart_date": "2007-09-22"
-    },
-    {
       "title": "What Time Is It",
       "artist": "High School Musical 2 Cast",
       "peak_position": 6,
@@ -25277,13 +24612,6 @@
       "peak_position": 58,
       "weeks_on_chart": 16,
       "last_chart_date": "2007-07-28"
-    },
-    {
-      "title": "2 Step",
-      "artist": "Unk",
-      "peak_position": 24,
-      "weeks_on_chart": 21,
-      "last_chart_date": "2007-07-14"
     },
     {
       "title": "I'm A Flirt",
@@ -26087,13 +25415,6 @@
       "title": "Gallery",
       "artist": "Mario Vazquez",
       "peak_position": 35,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2006-12-16"
-    },
-    {
-      "title": "The Kill (Bury Me)",
-      "artist": "30 Seconds To Mars",
-      "peak_position": 65,
       "weeks_on_chart": 20,
       "last_chart_date": "2006-12-16"
     },
@@ -27316,13 +26637,6 @@
       "last_chart_date": "2006-01-21"
     },
     {
-      "title": "Window Shopper",
-      "artist": "50 Cent",
-      "peak_position": 20,
-      "weeks_on_chart": 11,
-      "last_chart_date": "2006-01-21"
-    },
-    {
       "title": "Shake",
       "artist": "Ying Yang Twins Featuring Pitbull",
       "peak_position": 41,
@@ -27453,13 +26767,6 @@
       "artist": "Rob Thomas",
       "peak_position": 52,
       "weeks_on_chart": 20,
-      "last_chart_date": "2005-11-26"
-    },
-    {
-      "title": "Outta Control (Remix)",
-      "artist": "50 Cent Feat. Mobb Deep",
-      "peak_position": 6,
-      "weeks_on_chart": 19,
       "last_chart_date": "2005-11-26"
     },
     {
@@ -27659,13 +26966,6 @@
       "last_chart_date": "2005-10-01"
     },
     {
-      "title": "Just A Lil Bit",
-      "artist": "50 Cent",
-      "peak_position": 3,
-      "weeks_on_chart": 27,
-      "last_chart_date": "2005-09-24"
-    },
-    {
       "title": "Diamonds From Sierra Leone",
       "artist": "Kanye West",
       "peak_position": 43,
@@ -27734,13 +27034,6 @@
       "peak_position": 41,
       "weeks_on_chart": 20,
       "last_chart_date": "2005-09-10"
-    },
-    {
-      "title": "Let Me Go",
-      "artist": "3 Doors Down",
-      "peak_position": 14,
-      "weeks_on_chart": 31,
-      "last_chart_date": "2005-09-03"
     },
     {
       "title": "Incomplete",
@@ -27848,13 +27141,6 @@
       "last_chart_date": "2005-07-30"
     },
     {
-      "title": "1, 2 Step",
-      "artist": "Ciara Featuring Missy Elliott",
-      "peak_position": 2,
-      "weeks_on_chart": 39,
-      "last_chart_date": "2005-07-23"
-    },
-    {
       "title": "Wait (The Whisper Song)",
       "artist": "Ying Yang Twins",
       "peak_position": 15,
@@ -27904,13 +27190,6 @@
       "last_chart_date": "2005-07-16"
     },
     {
-      "title": "U Already Know",
-      "artist": "112 Featuring Foxy Brown",
-      "peak_position": 32,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2005-07-16"
-    },
-    {
       "title": "Live Like You Were Dying",
       "artist": "Tim McGraw",
       "peak_position": 29,
@@ -27922,13 +27201,6 @@
       "artist": "Kelly Clarkson",
       "peak_position": 6,
       "weeks_on_chart": 46,
-      "last_chart_date": "2005-07-09"
-    },
-    {
-      "title": "Candy Shop",
-      "artist": "50 Cent Featuring Olivia",
-      "peak_position": 1,
-      "weeks_on_chart": 23,
       "last_chart_date": "2005-07-09"
     },
     {
@@ -27974,13 +27246,6 @@
       "last_chart_date": "2005-06-25"
     },
     {
-      "title": "Disco Inferno",
-      "artist": "50 Cent",
-      "peak_position": 3,
-      "weeks_on_chart": 29,
-      "last_chart_date": "2005-06-25"
-    },
-    {
       "title": "Rich Girl",
       "artist": "Gwen Stefani Featuring Eve",
       "peak_position": 7,
@@ -27998,13 +27263,6 @@
       "title": "Anything But Mine",
       "artist": "Kenny Chesney",
       "peak_position": 48,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2005-06-25"
-    },
-    {
-      "title": "1 Thing",
-      "artist": "Amerie",
-      "peak_position": 8,
       "weeks_on_chart": 20,
       "last_chart_date": "2005-06-25"
     },
@@ -28562,13 +27820,6 @@
       "last_chart_date": "2005-01-22"
     },
     {
-      "title": "1985",
-      "artist": "Bowling For Soup",
-      "peak_position": 23,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2005-01-22"
-    },
-    {
       "title": "So Cold",
       "artist": "Breaking Benjamin",
       "peak_position": 76,
@@ -29024,13 +28275,6 @@
       "last_chart_date": "2004-09-11"
     },
     {
-      "title": "Love Song",
-      "artist": "311",
-      "peak_position": 59,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2004-09-11"
-    },
-    {
       "title": "Selfish",
       "artist": "Slum Village Featuring Kanye West & John Legend",
       "peak_position": 55,
@@ -29136,13 +28380,6 @@
       "last_chart_date": "2004-08-21"
     },
     {
-      "title": "Here Without You",
-      "artist": "3 Doors Down",
-      "peak_position": 5,
-      "weeks_on_chart": 51,
-      "last_chart_date": "2004-08-14"
-    },
-    {
       "title": "My Immortal",
       "artist": "Evanescence",
       "peak_position": 7,
@@ -29181,13 +28418,6 @@
       "title": "Overnight Celebrity",
       "artist": "Twista",
       "peak_position": 6,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2004-08-07"
-    },
-    {
-      "title": "8th World Wonder",
-      "artist": "Kimberley Locke",
-      "peak_position": 49,
       "weeks_on_chart": 20,
       "last_chart_date": "2004-08-07"
     },
@@ -29274,13 +28504,6 @@
       "peak_position": 42,
       "weeks_on_chart": 16,
       "last_chart_date": "2004-07-17"
-    },
-    {
-      "title": "100 Years",
-      "artist": "Five For Fighting",
-      "peak_position": 28,
-      "weeks_on_chart": 22,
-      "last_chart_date": "2004-07-10"
     },
     {
       "title": "Love's Divine",
@@ -30088,13 +29311,6 @@
       "last_chart_date": "2003-11-22"
     },
     {
-      "title": "P.I.M.P.",
-      "artist": "50 Cent",
-      "peak_position": 3,
-      "weeks_on_chart": 25,
-      "last_chart_date": "2003-11-15"
-    },
-    {
       "title": "Frontin'",
       "artist": "Pharrell Featuring Jay-Z",
       "peak_position": 5,
@@ -30256,13 +29472,6 @@
       "last_chart_date": "2003-10-04"
     },
     {
-      "title": "When I'm Gone",
-      "artist": "3 Doors Down",
-      "peak_position": 4,
-      "weeks_on_chart": 45,
-      "last_chart_date": "2003-09-27"
-    },
-    {
       "title": "Get Busy",
       "artist": "Sean Paul",
       "peak_position": 1,
@@ -30368,13 +29577,6 @@
       "last_chart_date": "2003-08-23"
     },
     {
-      "title": "21 Questions",
-      "artist": "50 Cent Featuring Nate Dogg",
-      "peak_position": 1,
-      "weeks_on_chart": 23,
-      "last_chart_date": "2003-08-23"
-    },
-    {
       "title": "Fighter",
       "artist": "Christina Aguilera",
       "peak_position": 20,
@@ -30434,13 +29636,6 @@
       "title": "What Would You Do?",
       "artist": "The Isley Brothers Featuring Ronald Isley",
       "peak_position": 49,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2003-08-16"
-    },
-    {
-      "title": "Still Ballin",
-      "artist": "2Pac Featuring Trick Daddy",
-      "peak_position": 69,
       "weeks_on_chart": 20,
       "last_chart_date": "2003-08-16"
     },
@@ -30508,13 +29703,6 @@
       "last_chart_date": "2003-08-09"
     },
     {
-      "title": "In Da Club",
-      "artist": "50 Cent",
-      "peak_position": 1,
-      "weeks_on_chart": 30,
-      "last_chart_date": "2003-08-02"
-    },
-    {
       "title": "I Believe",
       "artist": "Diamond Rio",
       "peak_position": 31,
@@ -30525,13 +29713,6 @@
       "title": "Put That Woman First",
       "artist": "Jaheim",
       "peak_position": 20,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2003-08-02"
-    },
-    {
-      "title": "4 Ever",
-      "artist": "Lil' Mo Featuring Fabolous",
-      "peak_position": 37,
       "weeks_on_chart": 20,
       "last_chart_date": "2003-08-02"
     },
@@ -30851,13 +30032,6 @@
       "last_chart_date": "2003-04-26"
     },
     {
-      "title": "Thugz Mansion",
-      "artist": "2Pac",
-      "peak_position": 19,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2003-04-19"
-    },
-    {
       "title": "The Baby",
       "artist": "Blake Shelton",
       "peak_position": 28,
@@ -30886,13 +30060,6 @@
       "last_chart_date": "2003-04-12"
     },
     {
-      "title": "Wanksta",
-      "artist": "50 Cent",
-      "peak_position": 13,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2003-04-12"
-    },
-    {
       "title": "The Red",
       "artist": "Chevelle",
       "peak_position": 56,
@@ -30905,20 +30072,6 @@
       "peak_position": 7,
       "weeks_on_chart": 29,
       "last_chart_date": "2003-04-05"
-    },
-    {
-      "title": "19 Somethin'",
-      "artist": "Mark Wills",
-      "peak_position": 23,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2003-04-05"
-    },
-    {
-      "title": "'03 Bonnie & Clyde",
-      "artist": "Jay-Z Featuring Beyonce Knowles",
-      "peak_position": 4,
-      "weeks_on_chart": 23,
-      "last_chart_date": "2003-03-29"
     },
     {
       "title": "Family Portrait",
@@ -32237,13 +31390,6 @@
       "last_chart_date": "2002-04-27"
     },
     {
-      "title": "7 Days",
-      "artist": "Craig David",
-      "peak_position": 10,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2002-04-20"
-    },
-    {
       "title": "Hey Baby",
       "artist": "No Doubt Featuring Bounty Killer",
       "peak_position": 5,
@@ -32433,13 +31579,6 @@
       "last_chart_date": "2002-03-02"
     },
     {
-      "title": "#1",
-      "artist": "Nelly",
-      "peak_position": 22,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2002-03-02"
-    },
-    {
       "title": "I'm Tryin'",
       "artist": "Trace Adkins",
       "peak_position": 44,
@@ -32571,13 +31710,6 @@
       "peak_position": 17,
       "weeks_on_chart": 17,
       "last_chart_date": "2002-02-02"
-    },
-    {
-      "title": "Dance With Me",
-      "artist": "112",
-      "peak_position": 39,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2002-01-26"
     },
     {
       "title": "Love Of My Life",
@@ -32727,13 +31859,6 @@
       "last_chart_date": "2001-12-15"
     },
     {
-      "title": "Be Like That",
-      "artist": "3 Doors Down",
-      "peak_position": 24,
-      "weeks_on_chart": 21,
-      "last_chart_date": "2001-12-15"
-    },
-    {
       "title": "I Would've Loved You Anyway",
       "artist": "Trisha Yearwood",
       "peak_position": 44,
@@ -32879,13 +32004,6 @@
       "peak_position": 24,
       "weeks_on_chart": 17,
       "last_chart_date": "2001-11-03"
-    },
-    {
-      "title": "Peaches & Cream",
-      "artist": "112",
-      "peak_position": 4,
-      "weeks_on_chart": 29,
-      "last_chart_date": "2001-10-27"
     },
     {
       "title": "When It's Over",
@@ -33609,30 +32727,9 @@
       "last_chart_date": "2001-04-21"
     },
     {
-      "title": "No More (Baby I'ma Do Right)",
-      "artist": "3LW",
-      "peak_position": 23,
-      "weeks_on_chart": 25,
-      "last_chart_date": "2001-04-21"
-    },
-    {
       "title": "Bow Wow (That's My Name)",
       "artist": "Lil Bow Wow",
       "peak_position": 21,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2001-04-21"
-    },
-    {
-      "title": "My Everything",
-      "artist": "98 Degrees",
-      "peak_position": 34,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2001-04-21"
-    },
-    {
-      "title": "It's Over Now",
-      "artist": "112",
-      "peak_position": 6,
       "weeks_on_chart": 20,
       "last_chart_date": "2001-04-21"
     },
@@ -33656,13 +32753,6 @@
       "peak_position": 42,
       "weeks_on_chart": 20,
       "last_chart_date": "2001-04-14"
-    },
-    {
-      "title": "Kryptonite",
-      "artist": "3 Doors Down",
-      "peak_position": 3,
-      "weeks_on_chart": 53,
-      "last_chart_date": "2001-04-07"
     },
     {
       "title": "He Loves U Not",
@@ -33798,13 +32888,6 @@
       "last_chart_date": "2001-03-03"
     },
     {
-      "title": "Loser",
-      "artist": "3 Doors Down",
-      "peak_position": 55,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2001-03-03"
-    },
-    {
       "title": "Born To Fly",
       "artist": "Sara Evans",
       "peak_position": 34,
@@ -33886,13 +32969,6 @@
       "artist": "Phil Vassar",
       "peak_position": 35,
       "weeks_on_chart": 20,
-      "last_chart_date": "2001-02-10"
-    },
-    {
-      "title": "911",
-      "artist": "Wyclef Jean Featuring Mary J. Blige",
-      "peak_position": 38,
-      "weeks_on_chart": 19,
       "last_chart_date": "2001-02-10"
     },
     {
@@ -34020,13 +33096,6 @@
       "peak_position": 57,
       "weeks_on_chart": 20,
       "last_chart_date": "2001-01-06"
-    },
-    {
-      "title": "Give Me Just One Night (Una Noche)",
-      "artist": "98 Degrees",
-      "peak_position": 2,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2000-12-30"
     },
     {
       "title": "Bag Lady",
@@ -34526,13 +33595,6 @@
       "last_chart_date": "2000-08-12"
     },
     {
-      "title": "Wobble Wobble",
-      "artist": "504 Boyz",
-      "peak_position": 17,
-      "weeks_on_chart": 18,
-      "last_chart_date": "2000-08-12"
-    },
-    {
       "title": "Thong Song",
       "artist": "Sisqo",
       "peak_position": 3,
@@ -34967,13 +34029,6 @@
       "last_chart_date": "2000-03-18"
     },
     {
-      "title": "24/7",
-      "artist": "Kevon Edmonds",
-      "peak_position": 10,
-      "weeks_on_chart": 20,
-      "last_chart_date": "2000-03-18"
-    },
-    {
       "title": "Hanginaround",
       "artist": "Counting Crows",
       "peak_position": 28,
@@ -35114,13 +34169,6 @@
       "last_chart_date": "2000-02-19"
     },
     {
-      "title": "Where My Girls At?",
-      "artist": "702",
-      "peak_position": 4,
-      "weeks_on_chart": 42,
-      "last_chart_date": "2000-02-12"
-    },
-    {
       "title": "Home To You",
       "artist": "John Michael Montgomery",
       "peak_position": 45,
@@ -35132,13 +34180,6 @@
       "artist": "Bush",
       "peak_position": 67,
       "weeks_on_chart": 20,
-      "last_chart_date": "2000-02-12"
-    },
-    {
-      "title": "4, 5, 6",
-      "artist": "Sole Featuring JT Money & Kandi",
-      "peak_position": 21,
-      "weeks_on_chart": 16,
       "last_chart_date": "2000-02-12"
     },
     {
@@ -35268,13 +34309,6 @@
       "last_chart_date": "2000-01-15"
     },
     {
-      "title": "15 Minutes",
-      "artist": "Marc Nelson",
-      "peak_position": 27,
-      "weeks_on_chart": 16,
-      "last_chart_date": "2000-01-15"
-    },
-    {
       "title": "I Love You",
       "artist": "Martina McBride",
       "peak_position": 24,
@@ -35327,13 +34361,6 @@
       "title": "She's All I Ever Had",
       "artist": "Ricky Martin",
       "peak_position": 2,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1999-12-18"
-    },
-    {
-      "title": "I Do (Cherish You)",
-      "artist": "98 Degrees",
-      "peak_position": 13,
       "weeks_on_chart": 20,
       "last_chart_date": "1999-12-18"
     },
@@ -35702,20 +34729,6 @@
       "last_chart_date": "1999-09-11"
     },
     {
-      "title": "Anywhere",
-      "artist": "112 Featuring Lil'z",
-      "peak_position": 15,
-      "weeks_on_chart": 25,
-      "last_chart_date": "1999-09-04"
-    },
-    {
-      "title": "The Hardest Thing",
-      "artist": "98 Degrees",
-      "peak_position": 5,
-      "weeks_on_chart": 24,
-      "last_chart_date": "1999-09-04"
-    },
-    {
       "title": "Who Dat",
       "artist": "JT Money Featuring Sole",
       "peak_position": 5,
@@ -35768,13 +34781,6 @@
       "title": "Livin' La Vida Loca",
       "artist": "Ricky Martin",
       "peak_position": 1,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1999-08-28"
-    },
-    {
-      "title": "808",
-      "artist": "Blaque",
-      "peak_position": 8,
       "weeks_on_chart": 20,
       "last_chart_date": "1999-08-28"
     },
@@ -36255,13 +35261,6 @@
       "last_chart_date": "1999-04-17"
     },
     {
-      "title": "Changes",
-      "artist": "2Pac",
-      "peak_position": 32,
-      "weeks_on_chart": 19,
-      "last_chart_date": "1999-04-10"
-    },
-    {
       "title": "Hold On To Me",
       "artist": "John Michael Montgomery",
       "peak_position": 33,
@@ -36458,25 +35457,11 @@
       "last_chart_date": "1999-02-13"
     },
     {
-      "title": "Because Of You",
-      "artist": "98 Degrees",
-      "peak_position": 3,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1999-02-13"
-    },
-    {
       "title": "Thank U",
       "artist": "Alanis Morissette",
       "peak_position": 17,
       "weeks_on_chart": 11,
       "last_chart_date": "1999-02-13"
-    },
-    {
-      "title": "Love Me",
-      "artist": "112 Featuring Mase",
-      "peak_position": 17,
-      "weeks_on_chart": 16,
-      "last_chart_date": "1999-02-06"
     },
     {
       "title": "My Favorite Mistake",
@@ -36703,13 +35688,6 @@
       "last_chart_date": "1998-11-28"
     },
     {
-      "title": "26 Cents",
-      "artist": "The Wilkinsons",
-      "peak_position": 55,
-      "weeks_on_chart": 18,
-      "last_chart_date": "1998-11-28"
-    },
-    {
       "title": "Daydreamin'",
       "artist": "Tatyana Ali",
       "peak_position": 6,
@@ -36833,13 +35811,6 @@
       "artist": "Voices Of Theory",
       "peak_position": 10,
       "weeks_on_chart": 31,
-      "last_chart_date": "1998-10-31"
-    },
-    {
-      "title": "Woof Woof",
-      "artist": "69 Boyz",
-      "peak_position": 31,
-      "weeks_on_chart": 16,
       "last_chart_date": "1998-10-31"
     },
     {
@@ -37018,13 +35989,6 @@
       "last_chart_date": "1998-08-29"
     },
     {
-      "title": "Do Your Thing",
-      "artist": "7 Mile",
-      "peak_position": 50,
-      "weeks_on_chart": 19,
-      "last_chart_date": "1998-08-29"
-    },
-    {
       "title": "There's Your Trouble",
       "artist": "Dixie Chicks",
       "peak_position": 36,
@@ -37155,13 +36119,6 @@
       "artist": "Loreena McKennitt",
       "peak_position": 18,
       "weeks_on_chart": 20,
-      "last_chart_date": "1998-07-18"
-    },
-    {
-      "title": "Do For Love",
-      "artist": "2Pac Featuring Eric Williams",
-      "peak_position": 21,
-      "weeks_on_chart": 18,
       "last_chart_date": "1998-07-18"
     },
     {
@@ -37431,13 +36388,6 @@
       "last_chart_date": "1998-04-18"
     },
     {
-      "title": "32 Flavors",
-      "artist": "Alana Davis",
-      "peak_position": 37,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1998-04-18"
-    },
-    {
       "title": "Ain't That Just The Way",
       "artist": "Lutricia McNeal",
       "peak_position": 63,
@@ -37697,13 +36647,6 @@
       "last_chart_date": "1998-02-07"
     },
     {
-      "title": "4 Seasons Of Loneliness",
-      "artist": "Boyz II Men",
-      "peak_position": 1,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1998-02-07"
-    },
-    {
       "title": "Everything",
       "artist": "Mary J. Blige",
       "peak_position": 24,
@@ -37753,13 +36696,6 @@
       "last_chart_date": "1998-01-24"
     },
     {
-      "title": "2 Become 1",
-      "artist": "Spice Girls",
-      "peak_position": 4,
-      "weeks_on_chart": 24,
-      "last_chart_date": "1998-01-24"
-    },
-    {
       "title": "Barbie Girl",
       "artist": "Aqua",
       "peak_position": 7,
@@ -37786,13 +36722,6 @@
       "peak_position": 36,
       "weeks_on_chart": 20,
       "last_chart_date": "1998-01-24"
-    },
-    {
-      "title": "Invisible Man",
-      "artist": "98 Degrees",
-      "peak_position": 12,
-      "weeks_on_chart": 28,
-      "last_chart_date": "1998-01-17"
     },
     {
       "title": "I Miss My Homies",
@@ -37828,13 +36757,6 @@
       "peak_position": 23,
       "weeks_on_chart": 20,
       "last_chart_date": "1998-01-10"
-    },
-    {
-      "title": "Have A Little Mercy",
-      "artist": "4.0",
-      "peak_position": 46,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1998-01-03"
     },
     {
       "title": "Free",
@@ -37963,13 +36885,6 @@
       "last_chart_date": "1997-11-15"
     },
     {
-      "title": "More Than This",
-      "artist": "10,000 Maniacs",
-      "peak_position": 25,
-      "weeks_on_chart": 18,
-      "last_chart_date": "1997-11-08"
-    },
-    {
       "title": "Take It To The Streets",
       "artist": "Rampage Featuring Billy Lawrence",
       "peak_position": 34,
@@ -38089,13 +37004,6 @@
       "last_chart_date": "1997-09-27"
     },
     {
-      "title": "6 Underground",
-      "artist": "Sneaker Pimps",
-      "peak_position": 45,
-      "weeks_on_chart": 22,
-      "last_chart_date": "1997-09-27"
-    },
-    {
       "title": "It's Your Love",
       "artist": "Tim McGraw With Faith Hill",
       "peak_position": 7,
@@ -38131,20 +37039,6 @@
       "last_chart_date": "1997-09-13"
     },
     {
-      "title": "Can U Feel It",
-      "artist": "3rd Party",
-      "peak_position": 43,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1997-09-13"
-    },
-    {
-      "title": "Cupid",
-      "artist": "112",
-      "peak_position": 13,
-      "weeks_on_chart": 28,
-      "last_chart_date": "1997-09-06"
-    },
-    {
       "title": "I Belong To You (Every Time I See Your Face)",
       "artist": "Rome",
       "peak_position": 6,
@@ -38177,13 +37071,6 @@
       "artist": "Nu Flavor Featuring Roger",
       "peak_position": 62,
       "weeks_on_chart": 20,
-      "last_chart_date": "1997-08-30"
-    },
-    {
-      "title": "5 Miles To Empty",
-      "artist": "Brownstone",
-      "peak_position": 39,
-      "weeks_on_chart": 16,
       "last_chart_date": "1997-08-30"
     },
     {
@@ -38429,13 +37316,6 @@
       "artist": "Spice Girls",
       "peak_position": 1,
       "weeks_on_chart": 23,
-      "last_chart_date": "1997-06-28"
-    },
-    {
-      "title": "Get It Together",
-      "artist": "702",
-      "peak_position": 10,
-      "weeks_on_chart": 20,
       "last_chart_date": "1997-06-28"
     },
     {
@@ -38719,13 +37599,6 @@
       "last_chart_date": "1997-03-22"
     },
     {
-      "title": "Come See Me",
-      "artist": "112",
-      "peak_position": 33,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1997-03-22"
-    },
-    {
       "title": "Between You And Me",
       "artist": "dc Talk",
       "peak_position": 29,
@@ -38950,13 +37823,6 @@
       "last_chart_date": "1997-02-01"
     },
     {
-      "title": "Steelo",
-      "artist": "702",
-      "peak_position": 32,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1997-01-25"
-    },
-    {
       "title": "What's Love Got To Do With It (From \"Supercop\")",
       "artist": "Warren G Featuring Adina Howard",
       "peak_position": 32,
@@ -39111,13 +37977,6 @@
       "last_chart_date": "1996-12-14"
     },
     {
-      "title": "Only You",
-      "artist": "112 Featuring The Notorious B.I.G.",
-      "peak_position": 13,
-      "weeks_on_chart": 28,
-      "last_chart_date": "1996-12-07"
-    },
-    {
       "title": "Elevators (Me & You)",
       "artist": "OutKast",
       "peak_position": 12,
@@ -39130,13 +37989,6 @@
       "peak_position": 24,
       "weeks_on_chart": 20,
       "last_chart_date": "1996-12-07"
-    },
-    {
-      "title": "How Do U Want It/California Love",
-      "artist": "2Pac Featuring K-Ci And JoJo",
-      "peak_position": 1,
-      "weeks_on_chart": 24,
-      "last_chart_date": "1996-11-23"
     },
     {
       "title": "Macarena",
@@ -39489,13 +38341,6 @@
       "last_chart_date": "1996-07-27"
     },
     {
-      "title": "1, 2, 3, 4 (Sumpin' New)",
-      "artist": "Coolio",
-      "peak_position": 5,
-      "weeks_on_chart": 21,
-      "last_chart_date": "1996-07-27"
-    },
-    {
       "title": "Keep On, Keepin' On (From \"Sunset Park\")",
       "artist": "MC Lyte Featuring Xscape",
       "peak_position": 10,
@@ -39566,13 +38411,6 @@
       "last_chart_date": "1996-07-13"
     },
     {
-      "title": "5 O'Clock",
-      "artist": "Nonchalant",
-      "peak_position": 24,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1996-07-13"
-    },
-    {
       "title": "Amish Paradise",
       "artist": "\"Weird Al\" Yankovic",
       "peak_position": 53,
@@ -39584,13 +38422,6 @@
       "artist": "Collective Soul",
       "peak_position": 19,
       "weeks_on_chart": 34,
-      "last_chart_date": "1996-07-06"
-    },
-    {
-      "title": "1979",
-      "artist": "The Smashing Pumpkins",
-      "peak_position": 12,
-      "weeks_on_chart": 22,
       "last_chart_date": "1996-07-06"
     },
     {
@@ -39732,13 +38563,6 @@
       "peak_position": 7,
       "weeks_on_chart": 14,
       "last_chart_date": "1996-05-25"
-    },
-    {
-      "title": "Anything",
-      "artist": "3T",
-      "peak_position": 15,
-      "weeks_on_chart": 33,
-      "last_chart_date": "1996-05-18"
     },
     {
       "title": "Fu-Gee-La",
@@ -40222,13 +39046,6 @@
       "peak_position": 25,
       "weeks_on_chart": 20,
       "last_chart_date": "1996-01-13"
-    },
-    {
-      "title": "1st Of Tha Month",
-      "artist": "Bone Thugs-N-Harmony",
-      "peak_position": 14,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1996-01-06"
     },
     {
       "title": "I Like It, I Love It",
@@ -40721,13 +39538,6 @@
       "last_chart_date": "1995-07-22"
     },
     {
-      "title": "Dear Mama/Old School",
-      "artist": "2Pac",
-      "peak_position": 9,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1995-07-22"
-    },
-    {
       "title": "Believe",
       "artist": "Elton John",
       "peak_position": 13,
@@ -40903,13 +39713,6 @@
       "last_chart_date": "1995-06-10"
     },
     {
-      "title": "Rodeo",
-      "artist": "95 South",
-      "peak_position": 77,
-      "weeks_on_chart": 18,
-      "last_chart_date": "1995-06-10"
-    },
-    {
       "title": "You Got It (From \"Boys On The Side\")",
       "artist": "Bonnie Raitt",
       "peak_position": 33,
@@ -40959,13 +39762,6 @@
       "last_chart_date": "1995-05-13"
     },
     {
-      "title": "Get Ready For This",
-      "artist": "2 Unlimited",
-      "peak_position": 38,
-      "weeks_on_chart": 34,
-      "last_chart_date": "1995-05-06"
-    },
-    {
       "title": "I'm The Only One",
       "artist": "Melissa Etheridge",
       "peak_position": 8,
@@ -40994,13 +39790,6 @@
       "last_chart_date": "1995-04-29"
     },
     {
-      "title": "Sukiyaki",
-      "artist": "4PM",
-      "peak_position": 8,
-      "weeks_on_chart": 32,
-      "last_chart_date": "1995-04-22"
-    },
-    {
       "title": "Before I Let You Go",
       "artist": "BLACKstreet",
       "peak_position": 7,
@@ -41012,13 +39801,6 @@
       "artist": "Jade",
       "peak_position": 20,
       "weeks_on_chart": 22,
-      "last_chart_date": "1995-04-22"
-    },
-    {
-      "title": "Kitty Kitty",
-      "artist": "69 Boyz",
-      "peak_position": 51,
-      "weeks_on_chart": 20,
       "last_chart_date": "1995-04-22"
     },
     {
@@ -41113,32 +39895,11 @@
       "last_chart_date": "1995-04-08"
     },
     {
-      "title": "100% Pure Love",
-      "artist": "Crystal Waters",
-      "peak_position": 11,
-      "weeks_on_chart": 45,
-      "last_chart_date": "1995-04-01"
-    },
-    {
-      "title": "Short Dick Man",
-      "artist": "20 Fingers Featuring Gillette",
-      "peak_position": 14,
-      "weeks_on_chart": 30,
-      "last_chart_date": "1995-04-01"
-    },
-    {
       "title": "Foolin' Around",
       "artist": "Changing Faces",
       "peak_position": 38,
       "weeks_on_chart": 20,
       "last_chart_date": "1995-04-01"
-    },
-    {
-      "title": "Tootsee Roll",
-      "artist": "69 Boyz",
-      "peak_position": 8,
-      "weeks_on_chart": 38,
-      "last_chart_date": "1995-03-25"
     },
     {
       "title": "I'll Make Love To You",
@@ -41286,13 +40047,6 @@
       "peak_position": 41,
       "weeks_on_chart": 17,
       "last_chart_date": "1995-02-18"
-    },
-    {
-      "title": "December, 1963 (Oh, What a Night)",
-      "artist": "The 4 Seasons",
-      "peak_position": 1,
-      "weeks_on_chart": 27,
-      "last_chart_date": "1995-02-11"
     },
     {
       "title": "Playaz Club",
@@ -42107,13 +40861,6 @@
       "last_chart_date": "1994-05-28"
     },
     {
-      "title": "Dunkie Butt (Please Please Please)",
-      "artist": "12 Gauge",
-      "peak_position": 28,
-      "weeks_on_chart": 21,
-      "last_chart_date": "1994-05-28"
-    },
-    {
       "title": "Groove Thang",
       "artist": "Zhane",
       "peak_position": 17,
@@ -42132,13 +40879,6 @@
       "artist": "Ace Of Base",
       "peak_position": 2,
       "weeks_on_chart": 36,
-      "last_chart_date": "1994-05-21"
-    },
-    {
-      "title": "Because The Night",
-      "artist": "10,000 Maniacs",
-      "peak_position": 11,
-      "weeks_on_chart": 29,
       "last_chart_date": "1994-05-21"
     },
     {
@@ -42371,13 +41111,6 @@
       "peak_position": 17,
       "weeks_on_chart": 20,
       "last_chart_date": "1994-03-19"
-    },
-    {
-      "title": "Keep Ya Head Up",
-      "artist": "2Pac",
-      "peak_position": 12,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1994-03-12"
     },
     {
       "title": "Slow And Easy",
@@ -42632,13 +41365,6 @@
       "last_chart_date": "1993-12-25"
     },
     {
-      "title": "I Get Around",
-      "artist": "2Pac",
-      "peak_position": 11,
-      "weeks_on_chart": 25,
-      "last_chart_date": "1993-12-18"
-    },
-    {
       "title": "Hey Jealousy",
       "artist": "Gin Blossoms",
       "peak_position": 25,
@@ -42860,20 +41586,6 @@
       "artist": "SWV",
       "peak_position": 1,
       "weeks_on_chart": 26,
-      "last_chart_date": "1993-10-16"
-    },
-    {
-      "title": "What's Up?",
-      "artist": "4 Non Blondes",
-      "peak_position": 14,
-      "weeks_on_chart": 26,
-      "last_chart_date": "1993-10-16"
-    },
-    {
-      "title": "Whoot, There It Is",
-      "artist": "95 South",
-      "peak_position": 11,
-      "weeks_on_chart": 25,
       "last_chart_date": "1993-10-16"
     },
     {
@@ -43386,13 +42098,6 @@
       "peak_position": 5,
       "weeks_on_chart": 39,
       "last_chart_date": "1993-05-08"
-    },
-    {
-      "title": "7",
-      "artist": "Prince And The New Power Generation",
-      "peak_position": 7,
-      "weeks_on_chart": 23,
-      "last_chart_date": "1993-05-01"
     },
     {
       "title": "Reminisce",
@@ -44053,13 +42758,6 @@
       "last_chart_date": "1992-10-24"
     },
     {
-      "title": "Twilight Zone",
-      "artist": "2 Unlimited",
-      "peak_position": 49,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1992-10-24"
-    },
-    {
       "title": "Baby Got Back",
       "artist": "Sir Mix-A-Lot",
       "peak_position": 1,
@@ -44358,13 +43056,6 @@
       "artist": "Nirvana",
       "peak_position": 32,
       "weeks_on_chart": 18,
-      "last_chart_date": "1992-07-18"
-    },
-    {
-      "title": "If You Want It",
-      "artist": "2nd II None",
-      "peak_position": 64,
-      "weeks_on_chart": 16,
       "last_chart_date": "1992-07-18"
     },
     {
@@ -44791,13 +43482,6 @@
       "title": "Wildside",
       "artist": "Marky Mark & The Funky Bunch",
       "peak_position": 10,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1992-03-21"
-    },
-    {
-      "title": "2 Legit 2 Quit",
-      "artist": "M.C. Hammer",
-      "peak_position": 5,
       "weeks_on_chart": 20,
       "last_chart_date": "1992-03-21"
     },
@@ -45302,13 +43986,6 @@
       "title": "Crazy",
       "artist": "Seal",
       "peak_position": 7,
-      "weeks_on_chart": 19,
-      "last_chart_date": "1991-10-26"
-    },
-    {
-      "title": "3 A.M. Eternal",
-      "artist": "The KLF",
-      "peak_position": 5,
       "weeks_on_chart": 19,
       "last_chart_date": "1991-10-26"
     },
@@ -46073,13 +44750,6 @@
       "artist": "UB40",
       "peak_position": 6,
       "weeks_on_chart": 25,
-      "last_chart_date": "1991-03-02"
-    },
-    {
-      "title": "Wiggle It",
-      "artist": "2 In A Room",
-      "peak_position": 15,
-      "weeks_on_chart": 22,
       "last_chart_date": "1991-03-02"
     },
     {
@@ -47147,13 +45817,6 @@
       "last_chart_date": "1990-04-07"
     },
     {
-      "title": "Me So Horny",
-      "artist": "The 2 Live Crew",
-      "peak_position": 26,
-      "weeks_on_chart": 30,
-      "last_chart_date": "1990-03-31"
-    },
-    {
       "title": "Back To Life",
       "artist": "Soul II Soul",
       "peak_position": 4,
@@ -47607,13 +46270,6 @@
       "peak_position": 2,
       "weeks_on_chart": 15,
       "last_chart_date": "1989-11-25"
-    },
-    {
-      "title": "18 And Life",
-      "artist": "Skid Row",
-      "peak_position": 4,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1989-11-18"
     },
     {
       "title": "It's Not Enough",
@@ -49048,13 +47704,6 @@
       "artist": "Richard Marx",
       "peak_position": 1,
       "weeks_on_chart": 21,
-      "last_chart_date": "1988-10-08"
-    },
-    {
-      "title": "1-2-3",
-      "artist": "Gloria Estefan & Miami Sound Machine",
-      "peak_position": 3,
-      "weeks_on_chart": 19,
       "last_chart_date": "1988-10-08"
     },
     {
@@ -51494,13 +50143,6 @@
       "last_chart_date": "1986-11-01"
     },
     {
-      "title": "25 Or 6 To 4",
-      "artist": "Chicago",
-      "peak_position": 4,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1986-10-25"
-    },
-    {
       "title": "Glory Of Love (Theme From \"The Karate Kid Part II\")",
       "artist": "Peter Cetera",
       "peak_position": 1,
@@ -52898,13 +51540,6 @@
       "artist": "Air Supply",
       "peak_position": 19,
       "weeks_on_chart": 15,
-      "last_chart_date": "1985-08-31"
-    },
-    {
-      "title": "19",
-      "artist": "Paul Hardcastle",
-      "peak_position": 15,
-      "weeks_on_chart": 14,
       "last_chart_date": "1985-08-31"
     },
     {
@@ -54306,13 +52941,6 @@
       "peak_position": 6,
       "weeks_on_chart": 19,
       "last_chart_date": "1984-05-19"
-    },
-    {
-      "title": "99 Luftballons",
-      "artist": "Nena",
-      "peak_position": 2,
-      "weeks_on_chart": 23,
-      "last_chart_date": "1984-05-12"
     },
     {
       "title": "Give It Up",
@@ -56016,13 +54644,6 @@
       "last_chart_date": "1982-08-28"
     },
     {
-      "title": "Caught Up In You",
-      "artist": "38 Special",
-      "peak_position": 10,
-      "weeks_on_chart": 17,
-      "last_chart_date": "1982-08-21"
-    },
-    {
       "title": "Still They Ride",
       "artist": "Journey",
       "peak_position": 19,
@@ -56100,13 +54721,6 @@
       "last_chart_date": "1982-07-31"
     },
     {
-      "title": "867-5309/jenny",
-      "artist": "Tommy Tutone",
-      "peak_position": 4,
-      "weeks_on_chart": 27,
-      "last_chart_date": "1982-07-24"
-    },
-    {
       "title": "Don't Talk To Strangers",
       "artist": "Rick Springfield",
       "peak_position": 2,
@@ -56140,13 +54754,6 @@
       "peak_position": 14,
       "weeks_on_chart": 16,
       "last_chart_date": "1982-07-17"
-    },
-    {
-      "title": "'65 Love Affair",
-      "artist": "Paul Davis",
-      "peak_position": 6,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1982-07-10"
     },
     {
       "title": "Empty Garden (Hey Hey Johnny)",
@@ -57269,13 +55876,6 @@
       "last_chart_date": "1981-06-20"
     },
     {
-      "title": "Hold On Loosely",
-      "artist": "38 Special",
-      "peak_position": 27,
-      "weeks_on_chart": 17,
-      "last_chart_date": "1981-06-20"
-    },
-    {
       "title": "Somebody's Knockin'",
       "artist": "Terri Gibbs",
       "peak_position": 13,
@@ -57337,13 +55937,6 @@
       "peak_position": 3,
       "weeks_on_chart": 19,
       "last_chart_date": "1981-05-30"
-    },
-    {
-      "title": "9 To 5",
-      "artist": "Dolly Parton",
-      "peak_position": 1,
-      "weeks_on_chart": 26,
-      "last_chart_date": "1981-05-23"
     },
     {
       "title": "Crying",
@@ -58525,13 +57118,6 @@
       "title": "Daydream Believer",
       "artist": "Anne Murray",
       "peak_position": 12,
-      "weeks_on_chart": 17,
-      "last_chart_date": "1980-04-12"
-    },
-    {
-      "title": "99",
-      "artist": "Toto",
-      "peak_position": 26,
       "weeks_on_chart": 17,
       "last_chart_date": "1980-04-12"
     },
@@ -61525,13 +60111,6 @@
       "last_chart_date": "1977-05-28"
     },
     {
-      "title": "The Things We Do For Love",
-      "artist": "10cc",
-      "peak_position": 5,
-      "weeks_on_chart": 19,
-      "last_chart_date": "1977-05-14"
-    },
-    {
       "title": "I Like Dreamin'",
       "artist": "Kenny Nolan",
       "peak_position": 3,
@@ -62624,13 +61203,6 @@
       "last_chart_date": "1976-04-17"
     },
     {
-      "title": "50 Ways To Leave Your Lover",
-      "artist": "Paul Simon",
-      "peak_position": 1,
-      "weeks_on_chart": 17,
-      "last_chart_date": "1976-04-10"
-    },
-    {
       "title": "Fanny (Be Tender With My Love)",
       "artist": "Bee Gees",
       "peak_position": 12,
@@ -62888,13 +61460,6 @@
       "peak_position": 9,
       "weeks_on_chart": 14,
       "last_chart_date": "1976-01-17"
-    },
-    {
-      "title": "Who Loves You",
-      "artist": "The 4 Seasons",
-      "peak_position": 3,
-      "weeks_on_chart": 20,
-      "last_chart_date": "1976-01-03"
     },
     {
       "title": "Our Day Will Come",
@@ -63191,13 +61756,6 @@
       "last_chart_date": "1975-10-11"
     },
     {
-      "title": "7-6-5-4-3-2-1 (Blow Your Whistle)",
-      "artist": "Gary Toms Empire",
-      "peak_position": 46,
-      "weeks_on_chart": 17,
-      "last_chart_date": "1975-10-11"
-    },
-    {
       "title": "Feel Like Makin' Love",
       "artist": "Bad Company",
       "peak_position": 10,
@@ -63294,13 +61852,6 @@
       "peak_position": 20,
       "weeks_on_chart": 9,
       "last_chart_date": "1975-09-13"
-    },
-    {
-      "title": "I'm Not In Love",
-      "artist": "10cc",
-      "peak_position": 2,
-      "weeks_on_chart": 17,
-      "last_chart_date": "1975-09-06"
     },
     {
       "title": "Midnight Blue",
@@ -63902,13 +62453,6 @@
       "artist": "Grand Funk",
       "peak_position": 3,
       "weeks_on_chart": 13,
-      "last_chart_date": "1975-03-08"
-    },
-    {
-      "title": "#9 Dream",
-      "artist": "John Lennon",
-      "peak_position": 9,
-      "weeks_on_chart": 12,
       "last_chart_date": "1975-03-08"
     },
     {
@@ -66481,13 +65025,6 @@
       "last_chart_date": "1972-12-23"
     },
     {
-      "title": "If I Could Reach You",
-      "artist": "The 5th Dimension",
-      "peak_position": 10,
-      "weeks_on_chart": 15,
-      "last_chart_date": "1972-12-16"
-    },
-    {
       "title": "Convention '72",
       "artist": "The Delegates",
       "peak_position": 8,
@@ -66976,13 +65513,6 @@
       "peak_position": 9,
       "weeks_on_chart": 10,
       "last_chart_date": "1972-07-22"
-    },
-    {
-      "title": "(Last Night) I Didn't Get To Sleep At All",
-      "artist": "The 5th Dimension",
-      "peak_position": 8,
-      "weeks_on_chart": 16,
-      "last_chart_date": "1972-07-15"
     },
     {
       "title": "I'll Take You There",
@@ -67685,13 +66215,6 @@
       "last_chart_date": "1971-11-27"
     },
     {
-      "title": "Never My Love",
-      "artist": "The 5th Dimension",
-      "peak_position": 12,
-      "weeks_on_chart": 11,
-      "last_chart_date": "1971-11-27"
-    },
-    {
       "title": "Only You Know And I Know",
       "artist": "Delaney & Bonnie",
       "peak_position": 20,
@@ -68056,13 +66579,6 @@
       "last_chart_date": "1971-08-07"
     },
     {
-      "title": "She's Not Just Another Woman",
-      "artist": "The 8th Day",
-      "peak_position": 11,
-      "weeks_on_chart": 13,
-      "last_chart_date": "1971-08-07"
-    },
-    {
       "title": "Rainy Days And Mondays",
       "artist": "Carpenters",
       "peak_position": 2,
@@ -68371,13 +66887,6 @@
       "last_chart_date": "1971-05-01"
     },
     {
-      "title": "Love's Lines, Angles And Rhymes",
-      "artist": "The 5th Dimension",
-      "peak_position": 19,
-      "weeks_on_chart": 10,
-      "last_chart_date": "1971-05-01"
-    },
-    {
       "title": "Temptation Eyes",
       "artist": "The Grass Roots",
       "peak_position": 15,
@@ -68567,13 +67076,6 @@
       "last_chart_date": "1971-03-06"
     },
     {
-      "title": "One Less Bell To Answer",
-      "artist": "The 5th Dimension",
-      "peak_position": 2,
-      "weeks_on_chart": 19,
-      "last_chart_date": "1971-02-27"
-    },
-    {
       "title": "Stoney End",
       "artist": "Barbra Streisand",
       "peak_position": 6,
@@ -68728,13 +67230,6 @@
       "last_chart_date": "1971-01-16"
     },
     {
-      "title": "5-10-15-20 (25-30 Years Of Love)",
-      "artist": "The Presidents",
-      "peak_position": 11,
-      "weeks_on_chart": 15,
-      "last_chart_date": "1971-01-09"
-    },
-    {
       "title": "We've Only Just Begun",
       "artist": "Carpenters",
       "peak_position": 2,
@@ -68830,13 +67325,6 @@
       "artist": "Sugarloaf",
       "peak_position": 3,
       "weeks_on_chart": 17,
-      "last_chart_date": "1970-12-05"
-    },
-    {
-      "title": "Somebody's Been Sleeping",
-      "artist": "100 Proof Aged in Soul",
-      "peak_position": 8,
-      "weeks_on_chart": 14,
       "last_chart_date": "1970-12-05"
     },
     {
@@ -69125,13 +67613,6 @@
       "peak_position": 7,
       "weeks_on_chart": 14,
       "last_chart_date": "1970-09-05"
-    },
-    {
-      "title": "O-o-h Child/Dear Prudence",
-      "artist": "The 5 Stairsteps",
-      "peak_position": 8,
-      "weeks_on_chart": 16,
-      "last_chart_date": "1970-08-29"
     },
     {
       "title": "Ball Of Confusion (That's What The World Is Today)",
@@ -69841,13 +68322,6 @@
       "last_chart_date": "1970-01-10"
     },
     {
-      "title": "Wedding Bell Blues",
-      "artist": "The 5th Dimension",
-      "peak_position": 1,
-      "weeks_on_chart": 15,
-      "last_chart_date": "1970-01-03"
-    },
-    {
       "title": "Smile A Little Smile For Me",
       "artist": "The Flying Machine",
       "peak_position": 5,
@@ -70156,13 +68630,6 @@
       "last_chart_date": "1969-09-20"
     },
     {
-      "title": "Workin' On A Groovy Thing",
-      "artist": "The 5th Dimension",
-      "peak_position": 20,
-      "weeks_on_chart": 10,
-      "last_chart_date": "1969-09-20"
-    },
-    {
       "title": "Give Peace A Chance",
       "artist": "Plastic Ono Band",
       "peak_position": 14,
@@ -70387,13 +68854,6 @@
       "last_chart_date": "1969-07-05"
     },
     {
-      "title": "Aquarius/Let The Sunshine In (The Flesh Failures)",
-      "artist": "The 5th Dimension",
-      "peak_position": 1,
-      "weeks_on_chart": 17,
-      "last_chart_date": "1969-06-28"
-    },
-    {
       "title": "Atlantis",
       "artist": "Donovan",
       "peak_position": 7,
@@ -70609,13 +69069,6 @@
       "peak_position": 20,
       "weeks_on_chart": 10,
       "last_chart_date": "1969-04-26"
-    },
-    {
-      "title": "Indian Giver",
-      "artist": "1910 Fruitgum Co.",
-      "peak_position": 5,
-      "weeks_on_chart": 13,
-      "last_chart_date": "1969-04-19"
     },
     {
       "title": "This Girl's In Love With You",
@@ -71024,13 +69477,6 @@
       "last_chart_date": "1968-11-30"
     },
     {
-      "title": "Sweet Blindness",
-      "artist": "The 5th Dimension",
-      "peak_position": 13,
-      "weeks_on_chart": 10,
-      "last_chart_date": "1968-11-30"
-    },
-    {
       "title": "Always Together",
       "artist": "The Dells",
       "peak_position": 18,
@@ -71157,13 +69603,6 @@
       "last_chart_date": "1968-10-19"
     },
     {
-      "title": "1, 2, 3, Red Light",
-      "artist": "1910 Fruitgum Co.",
-      "peak_position": 5,
-      "weeks_on_chart": 13,
-      "last_chart_date": "1968-10-19"
-    },
-    {
       "title": "On The Road Again",
       "artist": "Canned Heat",
       "peak_position": 16,
@@ -71281,13 +69720,6 @@
       "peak_position": 9,
       "weeks_on_chart": 10,
       "last_chart_date": "1968-09-21"
-    },
-    {
-      "title": "Stoned Soul Picnic",
-      "artist": "The 5th Dimension",
-      "peak_position": 3,
-      "weeks_on_chart": 16,
-      "last_chart_date": "1968-09-14"
     },
     {
       "title": "Journey To The Center Of The Mind",
@@ -71757,13 +70189,6 @@
       "peak_position": 1,
       "weeks_on_chart": 18,
       "last_chart_date": "1968-05-04"
-    },
-    {
-      "title": "Simon Says",
-      "artist": "1910 Fruitgum Co.",
-      "peak_position": 4,
-      "weeks_on_chart": 14,
-      "last_chart_date": "1968-04-27"
     },
     {
       "title": "Kiss Me Goodbye",
@@ -72571,13 +70996,6 @@
       "last_chart_date": "1967-08-26"
     },
     {
-      "title": "Up -- Up And Away",
-      "artist": "The 5th Dimension",
-      "peak_position": 7,
-      "weeks_on_chart": 12,
-      "last_chart_date": "1967-08-19"
-    },
-    {
       "title": "Jackson",
       "artist": "Nancy Sinatra & Lee Hazlewood",
       "peak_position": 14,
@@ -72603,13 +71021,6 @@
       "artist": "Scott McKenzie",
       "peak_position": 4,
       "weeks_on_chart": 12,
-      "last_chart_date": "1967-08-12"
-    },
-    {
-      "title": "C'mon Marianne",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 9,
-      "weeks_on_chart": 10,
       "last_chart_date": "1967-08-12"
     },
     {
@@ -72722,13 +71133,6 @@
       "artist": "Jon & Robin And The In Crowd",
       "peak_position": 18,
       "weeks_on_chart": 10,
-      "last_chart_date": "1967-07-08"
-    },
-    {
-      "title": "7 Rooms Of Gloom",
-      "artist": "Four Tops",
-      "peak_position": 14,
-      "weeks_on_chart": 8,
       "last_chart_date": "1967-07-08"
     },
     {
@@ -73005,13 +71409,6 @@
       "last_chart_date": "1967-04-29"
     },
     {
-      "title": "The 59th Street Bridge Song (Feelin' Groovy)",
-      "artist": "Harpers Bizarre",
-      "peak_position": 13,
-      "weeks_on_chart": 11,
-      "last_chart_date": "1967-04-29"
-    },
-    {
       "title": "Dedicated To The One I Love",
       "artist": "The Mamas & The Papas",
       "peak_position": 2,
@@ -73023,13 +71420,6 @@
       "artist": "The Beatles",
       "peak_position": 1,
       "weeks_on_chart": 10,
-      "last_chart_date": "1967-04-29"
-    },
-    {
-      "title": "Beggin'",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 16,
-      "weeks_on_chart": 9,
       "last_chart_date": "1967-04-29"
     },
     {
@@ -73173,13 +71563,6 @@
       "last_chart_date": "1967-03-18"
     },
     {
-      "title": "Go Where You Wanna Go",
-      "artist": "The 5th Dimension",
-      "peak_position": 16,
-      "weeks_on_chart": 10,
-      "last_chart_date": "1967-03-18"
-    },
-    {
       "title": "You Got To Me",
       "artist": "Neil Diamond",
       "peak_position": 18,
@@ -73190,13 +71573,6 @@
       "title": "(We Ain't Got) Nothin' Yet",
       "artist": "Blues Magoos",
       "peak_position": 5,
-      "weeks_on_chart": 14,
-      "last_chart_date": "1967-03-11"
-    },
-    {
-      "title": "98.6",
-      "artist": "Keith",
-      "peak_position": 7,
       "weeks_on_chart": 14,
       "last_chart_date": "1967-03-11"
     },
@@ -73310,13 +71686,6 @@
       "artist": "Jimmy Ruffin",
       "peak_position": 17,
       "weeks_on_chart": 11,
-      "last_chart_date": "1967-02-11"
-    },
-    {
-      "title": "Tell It To The Rain",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 10,
-      "weeks_on_chart": 10,
       "last_chart_date": "1967-02-11"
     },
     {
@@ -73530,13 +71899,6 @@
       "last_chart_date": "1966-12-10"
     },
     {
-      "title": "96 Tears",
-      "artist": "? (Question Mark) & The Mysterians",
-      "peak_position": 1,
-      "weeks_on_chart": 15,
-      "last_chart_date": "1966-12-10"
-    },
-    {
       "title": "Reach Out I'll Be There",
       "artist": "Four Tops",
       "peak_position": 1,
@@ -73653,13 +72015,6 @@
       "artist": "Neil Diamond",
       "peak_position": 6,
       "weeks_on_chart": 12,
-      "last_chart_date": "1966-11-05"
-    },
-    {
-      "title": "I've Got You Under My Skin",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 9,
-      "weeks_on_chart": 10,
       "last_chart_date": "1966-11-05"
     },
     {
@@ -74111,13 +72466,6 @@
       "last_chart_date": "1966-07-09"
     },
     {
-      "title": "Opus 17 (Don't You Worry 'Bout Me)",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 13,
-      "weeks_on_chart": 8,
-      "last_chart_date": "1966-07-09"
-    },
-    {
       "title": "When A Man Loves A Woman",
       "artist": "Percy Sledge",
       "peak_position": 1,
@@ -74363,13 +72711,6 @@
       "last_chart_date": "1966-04-30"
     },
     {
-      "title": "19th Nervous Breakdown",
-      "artist": "The Rolling Stones",
-      "peak_position": 2,
-      "weeks_on_chart": 10,
-      "last_chart_date": "1966-04-30"
-    },
-    {
       "title": "Nowhere Man",
       "artist": "The Beatles",
       "peak_position": 3,
@@ -74416,13 +72757,6 @@
       "artist": "The Turtles",
       "peak_position": 20,
       "weeks_on_chart": 12,
-      "last_chart_date": "1966-04-23"
-    },
-    {
-      "title": "634-5789 (Soulsville, U.S.A.)",
-      "artist": "Wilson Pickett",
-      "peak_position": 13,
-      "weeks_on_chart": 11,
       "last_chart_date": "1966-04-23"
     },
     {
@@ -74479,13 +72813,6 @@
       "artist": "The Supremes",
       "peak_position": 5,
       "weeks_on_chart": 11,
-      "last_chart_date": "1966-03-26"
-    },
-    {
-      "title": "Working My Way Back To You",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 9,
-      "weeks_on_chart": 9,
       "last_chart_date": "1966-03-26"
     },
     {
@@ -74720,13 +73047,6 @@
       "last_chart_date": "1966-01-22"
     },
     {
-      "title": "Let's Hang On!",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 3,
-      "weeks_on_chart": 16,
-      "last_chart_date": "1966-01-22"
-    },
-    {
       "title": "Turn! Turn! Turn! (To Everything There Is A Season)",
       "artist": "The Byrds",
       "peak_position": 1,
@@ -74809,13 +73129,6 @@
       "peak_position": 18,
       "weeks_on_chart": 8,
       "last_chart_date": "1966-01-08"
-    },
-    {
-      "title": "1-2-3",
-      "artist": "Len Barry",
-      "peak_position": 2,
-      "weeks_on_chart": 15,
-      "last_chart_date": "1966-01-01"
     },
     {
       "title": "I Hear A Symphony",
@@ -75868,13 +74181,6 @@
       "last_chart_date": "1965-03-13"
     },
     {
-      "title": "Bye, Bye, Baby (Baby, Goodbye)",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 12,
-      "weeks_on_chart": 9,
-      "last_chart_date": "1965-03-13"
-    },
-    {
       "title": "Heart Of Stone",
       "artist": "The Rolling Stones",
       "peak_position": 19,
@@ -76155,13 +74461,6 @@
       "last_chart_date": "1964-12-19"
     },
     {
-      "title": "Big Man In Town",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 20,
-      "weeks_on_chart": 7,
-      "last_chart_date": "1964-12-19"
-    },
-    {
       "title": "Have I The Right?",
       "artist": "The Honeycombs",
       "peak_position": 5,
@@ -76379,13 +74678,6 @@
       "last_chart_date": "1964-10-17"
     },
     {
-      "title": "Save It For Me",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 10,
-      "weeks_on_chart": 8,
-      "last_chart_date": "1964-10-17"
-    },
-    {
       "title": "Where Did Our Love Go",
       "artist": "The Supremes",
       "peak_position": 1,
@@ -76524,13 +74816,6 @@
       "peak_position": 16,
       "weeks_on_chart": 8,
       "last_chart_date": "1964-09-12"
-    },
-    {
-      "title": "Rag Doll",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 1,
-      "weeks_on_chart": 12,
-      "last_chart_date": "1964-09-05"
     },
     {
       "title": "I Wanna Love Him So Bad",
@@ -76841,13 +75126,6 @@
       "last_chart_date": "1964-06-13"
     },
     {
-      "title": "Ronnie",
-      "artist": "The 4 Seasons Featuring the \"Sound of Frankie Valli\"",
-      "peak_position": 6,
-      "weeks_on_chart": 10,
-      "last_chart_date": "1964-06-13"
-    },
-    {
       "title": "Dead Man's Curve",
       "artist": "Jan & Dean",
       "peak_position": 8,
@@ -76988,23 +75266,9 @@
       "last_chart_date": "1964-04-25"
     },
     {
-      "title": "Dawn (Go Away)",
-      "artist": "The 4 Seasons",
-      "peak_position": 3,
-      "weeks_on_chart": 13,
-      "last_chart_date": "1964-04-25"
-    },
-    {
       "title": "Fun, Fun, Fun",
       "artist": "The Beach Boys",
       "peak_position": 5,
-      "weeks_on_chart": 11,
-      "last_chart_date": "1964-04-25"
-    },
-    {
-      "title": "Stay",
-      "artist": "The 4 Seasons",
-      "peak_position": 16,
       "weeks_on_chart": 11,
       "last_chart_date": "1964-04-25"
     },
@@ -77478,13 +75742,6 @@
       "last_chart_date": "1963-12-21"
     },
     {
-      "title": "500 Miles Away From Home",
-      "artist": "Bobby Bare",
-      "peak_position": 10,
-      "weeks_on_chart": 11,
-      "last_chart_date": "1963-12-14"
-    },
-    {
       "title": "Fools Rush In",
       "artist": "Rick Nelson",
       "peak_position": 12,
@@ -77751,13 +76008,6 @@
       "last_chart_date": "1963-09-28"
     },
     {
-      "title": "Candy Girl",
-      "artist": "The 4 Seasons",
-      "peak_position": 3,
-      "weeks_on_chart": 13,
-      "last_chart_date": "1963-09-28"
-    },
-    {
       "title": "Danke Schoen",
       "artist": "Wayne Newton And The Newton Brothers",
       "peak_position": 13,
@@ -77978,13 +76228,6 @@
       "title": "The Good Life",
       "artist": "Tony Bennett",
       "peak_position": 18,
-      "weeks_on_chart": 10,
-      "last_chart_date": "1963-07-13"
-    },
-    {
-      "title": "18 Yellow Roses",
-      "artist": "Bobby Darin",
-      "peak_position": 10,
       "weeks_on_chart": 10,
       "last_chart_date": "1963-07-13"
     },
@@ -78290,13 +76533,6 @@
       "last_chart_date": "1963-04-20"
     },
     {
-      "title": "Walk Like A Man",
-      "artist": "The 4 Seasons",
-      "peak_position": 1,
-      "weeks_on_chart": 13,
-      "last_chart_date": "1963-04-20"
-    },
-    {
       "title": "Let's Limbo Some More",
       "artist": "Chubby Checker",
       "peak_position": 20,
@@ -78563,13 +76799,6 @@
       "last_chart_date": "1963-02-02"
     },
     {
-      "title": "Big Girls Don't Cry",
-      "artist": "The 4 Seasons",
-      "peak_position": 1,
-      "weeks_on_chart": 16,
-      "last_chart_date": "1963-02-02"
-    },
-    {
       "title": "Return To Sender",
       "artist": "Elvis Presley With The Jordanaires",
       "peak_position": 2,
@@ -78825,13 +77054,6 @@
       "title": "Patches",
       "artist": "Dickey Lee",
       "peak_position": 6,
-      "weeks_on_chart": 14,
-      "last_chart_date": "1962-11-24"
-    },
-    {
-      "title": "Sherry",
-      "artist": "The 4 Seasons",
-      "peak_position": 1,
       "weeks_on_chart": 14,
       "last_chart_date": "1962-11-24"
     },
@@ -83102,13 +81324,6 @@
       "title": "Lonely Teardrops",
       "artist": "Jackie Wilson",
       "peak_position": 7,
-      "weeks_on_chart": 21,
-      "last_chart_date": "1959-04-13"
-    },
-    {
-      "title": "16 Candles",
-      "artist": "The Crests",
-      "peak_position": 2,
       "weeks_on_chart": 21,
       "last_chart_date": "1959-04-13"
     },

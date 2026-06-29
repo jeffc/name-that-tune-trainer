@@ -7,7 +7,7 @@ trivia, the host will ask participants to name either the artist/band/group or
 the title of the song, then play the song, starting from the beginning. Teams
 score points by entering the first letter of the requested information into
 their devices (skipping articles like "a", "an", or "the"). Teams cannot change
-their answer once selected.
+their answer once selected. Since input devices are limited to standard letters (A-Z), songs where the normalized target answer (title or artist) begins with a number or symbol must be excluded.
 
 Songs are chosen from popular / decently-well-known songs
 from the 60s until the present day.
